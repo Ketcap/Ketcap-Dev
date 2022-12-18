@@ -1,0 +1,158 @@
+---
+type: post
+title: January 2022 Newsletter
+date: 2022-02-01
+---
+
+import Image from "next/image";
+
+Remembering is hard? Taking notes is best. But what about keeping them coming to you every month? So we have started to bring you all these news, updates, challenges.
+
+<Image
+  src="/memes/january-2022.png"
+  alt="If you get it you get it 😂"
+  width={500}
+  height={500}
+/>
+
+## Contents 📋
+
+- [News & Explore](#news--explore)
+- [Libraries](#libraries)
+- [Challenge](#challenge)
+
+---
+
+## <a name="#news--explore">News & Explore</a>
+
+Let’s see what has been going on and what are people around the world have been creating. Here you can find a curated list for you this month.
+
+### Open Source goes sideways
+
+This month creator of fakerjs has deleted the repo, unpublished all the versions on npm, and changed the title to What really happened with Aaron Swartz?. It affected too many libraries and companies that use this library either directly or indirectly via the packages they use. Just a recap this library receives downloads over 2.8m weekly.
+
+[The verge](https://www.theverge.com/2022/1/9/22874949/developer-corrupts-open-source-libraries-projects-affected)
+
+[Github Issue](https://github.com/Marak/colors.js/issues/285)
+
+[News](https://www.bleepingcomputer.com/news/security/dev-corrupts-npm-libs-colors-and-faker-breaking-thousands-of-apps/)
+
+### Remix is coming in hot
+
+Growing community on javascript, there’s always better. This time Remix is better than Nextjs. How?
+
+[Remix Blog](https://remix.run/blog/remix-vs-next)
+
+### Etsy moving away from React to Preact
+
+Moving away from React seems hard but not while Preact is here. Update has been announced by a developer at Etsy.
+
+[Sharing update](https://twitter.com/sangster/status/1486382892326563845)
+
+### Migrate the new library, not the new version
+
+The new year is starting fast with multiple projects, companies migrating switching tools for their needs, and Storybook has decided and moved away from styled components to emotion with zero bugs.
+
+[Storybook Blog Post](https://storybook.js.org/blog/541-components-from-styled-components-to-emotion/)
+
+### Pipe Operator for JavaScript
+
+Yes, you have read correctly. The pipe operator has been on the proposal for JavaScript.
+
+[2ality post](https://2ality.com/2022/01/pipe-operator.html)
+
+[GitHub Proposal](https://github.com/tc39/proposal-pipeline-operator#tacit-unary-function-application-syntax)
+
+### State of JavaScript 2021 Survey
+
+It might be late to get the survey of 2021 but even the 2020 Olympics done in 2021 so why not. You might want to contribute to the survey.
+
+[State of JS](https://app.stateofjs.com/survey/state-of-js/2021)
+
+### Hard to find unimported files
+
+While development is ongoing it might be hard to handle all the files and components, and unimported files are hard to catch. So there might be a tool for this problem. The project called “unimported” is here to clean the code.
+
+[GitHub Link](https://github.com/smeijer/unimported)
+
+### Solving Advent of Code with eval.
+
+Eval? Do we even use that? I would say it seems handy from time to time. To solve puzzles it works like a charm.
+
+[Blog Post](https://kittygiraudel.com/2022/01/21/exploiting-javascript-quirks-for-fun-and-profit/)
+
+### Vercel launching Platforms Starter Kit
+
+What is this kit? It’s a template for building multi-tenant applications with built-in custom domain support. Interested? It’s even free.
+
+[Product Hunt](https://www.producthunt.com/posts/platforms-starter-kit)
+
+### Looking for replacing Electron?
+
+Say no more. A lightweight (how it can be lighter than an electron), Electron like the library to build desktop apps. Neutralinojs is here for you to help to build your next desktop app.
+
+[Neutralino](https://neutralino.js.org/)
+[Electron](https://www.electronjs.org/)
+
+### Porting SWC to GO
+
+The creator of the “SWC” package has been porting tsc to GO language. You might think why not rust right? Let’s find out what he has been up to.
+
+[SWC](https://swc.rs/)
+[TSC to GO blog post](https://kdy1.dev/posts/2022/1/tsc-go)
+
+### Storybook plugin for Figma
+
+Designers and developers checking each others' work are hard always. So why not unify in 1 place. Using Storybook in Figma is something to look for.
+
+[Storybook Announcment](https://storybook.js.org/blog/figma-plugin-sneak-peek/)
+
+### Sharing is not easy always
+
+Not between ourselves but in social media and platforms. Writing code for sharing is always a pain. So no dependency library here to save us. Sharer.js has implemented 20 social media to share what is needed.
+
+[GitHub Repo](https://ellisonleao.github.io/sharer.js/)
+
+### Looking for tools?
+
+A curated 646 resource for you.
+
+[Toolkit](https://toolkit.addy.codes/)
+
+---
+
+## <a name="#libraries">Libraries</a>
+
+**NodeJS**: security release has now [available](https://nodejs.org/en/blog/vulnerability/jan-2022-security-releases/)
+
+**Typescript**: beta version announced [v4.6](https://devblogs.microsoft.com/typescript/announcing-typescript-4-6-beta/)
+
+**Eslint**: released [v8.7.0](https://eslint.org/blog/2022/01/eslint-v8.7.0-released)
+
+**Deno**: the new version has just landed [v1.18](https://deno.com/blog/v1.18)
+
+**Prisma**: January's first release is [v3.8.0](https://github.com/prisma/prisma/releases/tag/3.8.0)
+
+**NextJS**: constantly updated and now [v12.0.9](https://github.com/vercel/next.js/releases/tag/v12.0.9)
+
+**Ant Design**: bug fixes have been landed [v4.18.5](https://github.com/ant-design/ant-design/releases/tag/4.18.5)
+
+---
+
+## <a name="#challenge">Challenge</a>
+
+Most of us either heard or know the game called wordle. So what about challenging ourselves to make an interview question out of it.
+
+If you didn’t hear about it check it on here and if you are a native Czech speaker you would like to play it in your own language see here. Kudos to for making a Czech version of it.
+
+Using the rules of Wordle, given the guess word and a solution word returns a set of emojis returned from the guess word. Example for you
+
+```js
+let solutionWord = "fudge"
+
+$ wordleGuess("reads", solutionWord)
+$ "⬛🟨⬛🟨⬛"
+
+$ wordleGuess("lodge", solutionWord)
+$ "⬛⬛🟩🟩🟩"
+```

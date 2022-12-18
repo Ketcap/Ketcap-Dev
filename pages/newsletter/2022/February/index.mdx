@@ -1,0 +1,147 @@
+---
+type: post
+title: February 2022 Newsletter
+date: 2022-03-01
+---
+
+import Image from "next/image";
+
+The world is evolving fast. Multiple things are going on at the same time so while everything is keeping you busy we have prepared a newsletter for you.
+
+<Image
+  src="/memes/february-2022.png"
+  alt="Why do it yourself when you can automate it"
+  width={500}
+  height={500}
+/>
+
+## Contents 📋
+
+- [News & Explore](#news--explore)
+- [Libraries](#libraries)
+- [Challenge](#challenge)
+
+---
+
+## <a name="#news--explore">News & Explore</a>
+
+Engineering and technology grow faster than we think. It’s always amazing to see the progress around it. Don’t worry about catching it all we have a curated list for you.
+
+### Anonymous Group takes an action
+
+Anonymous declared war against the Russian Government.
+
+[Anonymous on Twitter](https://twitter.com/YourAnonOne/status/1496965766435926039)
+[State TVs have been hacked.](https://twitter.com/YourAnonOne/status/1497682868985905154)
+
+### What’s a monorepo?
+
+There’s constant talk about monorepos and how to use them. What are the benefits? What are the tools? What features do these tools support? You can visit the webpage below to find all answers. The short answer is: There’s no single solution for everyone.
+
+[Monorepo Explained](https://monorepo.tools/)
+
+### HTML is hard but CSS is harder
+
+What if I told you even you can debug CSS which isn't a programming language?
+
+[Debug your CSS layouts with this one simple trick](https://whitep4nth3r.com/blog/debug-css-layouts/)
+
+### Merging array with join?
+
+If you are still using join to merge things in the array you might want to re-think that decision again.
+
+[Eric Clemmons – For Hire on Twitter](https://twitter.com/ericclemmons/status/1488558951008509963)
+
+### Let’s align on package.json
+
+`package.json` is often misunderstood or misunderstood. Let’s align to see what it is.
+
+[The Basics of Package.json](https://nodesource.com/blog/the-basics-of-package-json)
+
+### Migrations with more DX
+
+Prisma announced new tools for migrations to make migrations better and more developer-friendly.
+
+[Prisma Announcment](https://www.prisma.io/blog/prisma-migrate-dx-primitives)
+
+### Evolution of the Web and Vercel
+
+The web grows every year and Vercel has grown as well. Check out their statistics!
+
+[The evolution of the Web: What we learned and where we’re going – Vercel](https://vercel.com/blog/how-the-web-evolves)
+
+### Let’s inspect GraphQL
+
+When working with GraphQL you need to know what are the requests and inspect them. If you wish to do so this tool might be for you.
+
+[GitHub Repo](https://github.com/warrenday/graphql-network-inspector)
+
+### Debugging like a Pro
+
+console.log is good, console.table is better and then there’s debugging.
+
+[How to debug JavaScript code](https://flaviocopes.com/debugging/)
+
+### More performant with hooks
+
+React hooks help us to create more performant solutions when used correctly. Let’s see them in action.
+
+[Blog Post on Medium](https://blog.bitsrc.io/react-hooks-optimisation-8da478ded16d)
+
+### The Top 100 NPM packages that require 2FA
+
+Open source and npm packages are used very widely and to support their security Github and NPM are rolling out 2FA.
+
+[GitHub Issue](https://github.blog/2022-02-01-top-100-npm-package-maintainers-require-2fa-additional-security/)
+
+### UI Library that is sponsored by Vercel
+
+There are too many UI libraries out there and all of them are looking cool to use. Here’s one more to add to your stack.
+
+[NextUI](https://nextui.org/docs/components/collapse)
+
+### Markdowns for JS is much better
+
+MDX has released their new major version 2 which is much faster and packs new features.
+
+[MDX 2.0](https://mdxjs.com/)
+
+---
+
+## <a name="#libraries">Libraries</a>
+
+**Babel**: has released [v7.17.0](https://babeljs.io/blog/2022/02/02/7.17.0)
+
+Decorators are now stable but not compatible with TS :disappointed_relieved:
+
+**NodeJs**: has released [v17.5](https://nodejs.org/dist/latest-v17.x/docs/api/)
+
+`fetch` is globally available under the [experiment](https://fusebit.io/blog/node-fetch/) tag.
+
+**ElectronJs**: has released [v17](https://www.electronjs.org/blog/electron-17-0).
+
+Upgrades to Chromium 98, V8 9.8, and node 16.13.0.
+
+**ExpressJs**: has released [5.0.0.Beta](https://github.com/expressjs/express/blob/5.0/History.md).
+
+Breaking changes, dependency updates, new features, and more…
+
+---
+
+## <a name="#challenge">Challenge</a>
+
+When you work with Date and Timezones it’s a always tricky situation. The conversion of timezones and correct display of time to the user is a problem many of us faced in the past.
+
+Given an array of people and their timezones in UTC, write a function to return the local time for a given person. Maybe you would like to solve for a 12 or 24-hour clock!
+
+```js
+// Time 14:00 UTC
+let humans = [
+    { name: 'John', timezone: 'UTC−1:00' },
+    { name: 'Neo', timezone: 'UTC+2:00' }
+    { name: 'Trinity', timezone: 'UTC−3:00' }
+]
+
+localTime('Neo')
+16:00pm // Check the time above to see if it's correct (it will change on your usage and when you run)
+```
