@@ -1,0 +1,120 @@
+---
+type: post
+title: March 2022 Newsletter
+date: 2022-04-01
+---
+
+import Image from "next/image";
+
+[TODO some description]
+
+<Image
+  src="/memes/march-2022.png"
+  alt="Cannot figure out"
+  width={500}
+  height={500}
+/>
+
+## Contents 📋
+
+- [News & Explore](#news--explore)
+- [Libraries](#libraries)
+- [Challenge](#challenge)
+
+---
+
+## <a name="#news--explore">News & Explore</a>
+
+As the projects are growing, all the needs are changing constantly. So, each tool and each library is solving something different. Why not check them and use them?
+
+### Multiple Database connections with Prisma
+
+Growing projects might need multiple schemas or databases. Why not use Prisma for all.
+
+[Multiple DB in Prisma](https://towardsdev.com/multiple-database-connections-in-prisma-b252782b2646)
+
+### File Structuring
+
+In the programming world, there are 2 things that are hard.
+
+1. Naming variable
+2. File structure
+
+We might get inspiration for the second one. The first one is still a big debate 🤣.
+
+[File/Directory Structure](https://www.joshwcomeau.com/react/file-structure/)
+
+### React 18 has now released
+
+React 18 is now available on npm!
+
+- Automatic batching
+- Transitions
+- New Hooks
+
+[React v18.0 – React Blog](https://reactjs.org/blog/2022/03/29/react-v18.html)
+
+### Architecture hints
+
+As more growing projects come along, the architecture and the alignment on how things are handled is key. This article might be a long read, but there are definitely different perspectives that you can get.
+
+[Tao of Node - Design, Architecture & Best Practices](https://alexkondov.com/tao-of-node/)
+
+### Nvidia Instant NeRF
+
+No, it’s not what you think as a NeRF. It’s Nvidia’s latest neural rendering model for 3D scenes, and it’s rendering that scene from multiple 2D images in seconds.
+
+[NVIDIA Blog](https://blogs.nvidia.com/blog/2022/03/25/instant-nerf-research-3d-ai/)
+
+### React Native Architecture updates
+
+The React team has already announced this year (2022) as a New Architecture year. So, React Native is getting architecture changes.
+
+[React Native Blog](https://reactnative.dev/blog/2022/03/15/an-update-on-the-new-architecture-rollout)
+
+### Flutter vs React Native
+
+This article about the long-running debate between frameworks has a better explanation and a deep dive on each topic.
+
+[Flutter vs React Native](https://shift.infinite.red/flutter-is-better-than-react-native-fed10c92a768)
+
+### Proposal for JavaScript syntax from Typescript developers
+
+Writing Typescript and compiling it to JavaScript then running is not the best way. So, there is a new proposal that hopes to solve compiling.
+
+[A Proposal For Type Syntax in JavaScript](https://devblogs.microsoft.com/typescript/a-proposal-for-type-syntax-in-javascript)
+
+---
+
+## <a name="#libraries">Libraries</a>
+
+**NodeJS**: has released [v17.8](https://nodejs.org/en/blog/release/v17.8.0/)
+
+perf_hooks adds HTTP tracing.
+
+**Deno**: has released [v1.20](https://deno.com/blog/v1.20)
+
+Supporting TS v4.6 and V8 engine is upgraded to v10.
+
+**MDX**: has released [v2.1](https://github.com/mdx-js/mdx)
+
+Bugfixes and minor adjustments.
+
+**RollupJs**: has released [v2.70](https://github.com/rollup/rollup/releases/tag/v2.70.0)
+
+Adjustments and fixes.
+
+**NestJs**: has released [v8.4.3](https://github.com/nestjs/nest/releases/tag/v8.4.3)
+
+Casual updates, adjustments, and fixes.
+
+---
+
+## <a name="#challenge">Challenge</a>
+
+This week we have a list of times in a 24 hour period. What you need to do is find the smallest interval between two times in the list. Example and input for you:
+
+```js
+smallestTimeInterval(["01:00", "08:15", "11:30", "13:45", "14:10", "20:05"]);
+// '25 minutes'(13:45 - 14:10)
+```

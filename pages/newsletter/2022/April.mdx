@@ -1,0 +1,174 @@
+---
+type: post
+title: April 2022 Newsletter
+date: 2022-06-01
+---
+
+import Image from "next/image";
+
+[TODO some description]
+
+<Image
+  src="/memes/april-2022.png"
+  alt="When I start a new project"
+  width={500}
+  height={500}
+/>
+
+## Contents 📋
+
+- [News & Explore](#news--explore)
+- [Libraries](#libraries)
+- [Challenge](#challenge)
+
+---
+
+## <a name="#news--explore">News & Explore</a>
+
+As new projects are kicking off and ongoing projects are scaling up, different problems have arisen. The ecosystem is growing a lot with new versions and updates. Let’s see what we have this month.
+
+### Flexible components using as/is
+
+While using styled-components, we are using “as” prop to change the HTML element that is rendered. Ever wonder how you can do that?
+
+[Flexible Design Systems](https://www.lloydatkinson.net/posts/2022/design-system-component-as-is-props/)
+
+### Node 18 has now released
+
+Node.js is bringing bigger features, updates, and fixes. Some of the features that are coming:
+
+- global fetch(experimental)
+- runner module for testing
+
+[Node 18](https://nodejs.org/en/blog/announcements/v18-release-announce/)
+
+### Text Editor from Facebook
+
+When users need to put text with edits and formatting, it’s one of the things that is problematic. Facebook released a text editor framework that does things differently.
+
+[GitHub Repo](https://github.com/facebook/lexical)
+
+### JavaScript operators…
+
+If you want to quickly name 5 operators, how many can you name? There are 50 operators in JS. If you are surprised as I am, let me show you all.
+
+[Operator Lookup](https://www.joshwcomeau.com/operator-lookup/)
+
+### Fetch or Axios
+
+The battle of request libraries is on. Which one do you think will win?
+
+[Fetch vs Axios](https://meticulous.ai/blog/fetch-vs-axios/)
+
+### Throwing everything in JS
+
+Did you know you can literally throw everything in javascript?
+
+[Throw Anything](https://www.bennadel.com/blog/4210-you-can-throw-anything-in-javascript-and-other-async-await-considerations.htm)
+
+### Rome formatter
+
+Over the last year, Rome has been rewritten into rust and it seems like it will overrule Eslint and others for formatting.
+
+[Announcing Rome Formatter](https://rome.tools/blog/2022/04/05/rome-formatter-release)
+
+### New Array methods
+
+Creating array from an array, using references, making changes on copied ones… Those long processes might be replaced.
+
+[Hackernoon Post](https://hackernoon.com/the-array-methods-coming-to-javascript-in-2022)
+
+### Need a blog but don’t have time?
+
+I've got your back. Here’s a ready-to-use blog template for you built with Tailwind and Next.js.
+
+[GitHub Repo](https://github.com/netlify-templates/nextjs-blog-theme)
+
+### Redwood.js 1.0 is out
+
+Redwood is a full-stack React framework for your needs, and version 1 is officially out.
+
+[RedwoodJS v1.0 Launch](https://v1launchweek.redwoodjs.com/?ck_subscriber_id=1010788714)
+
+### AI creating images from text?
+
+Should we be alarmed or just be fine with it?
+
+[DALL·E 2](https://openai.com/dall-e-2)
+
+### Terms of service; Didn’t read
+
+It’s hard to read all of the TOS on each application, so there’s an easier way.
+
+[Frontpage -- Terms of Service; Didn't Read](https://tosdr.org/)
+
+---
+
+## <a name="#libraries">Libraries</a>
+
+**Prisma**: has released [v3.13.0](https://github.com/prisma/prisma/releases/tag/3.13.0)
+
+migrate diff and db execute are now Generally Available!
+
+**Remotion**: has released [v3.0](https://www.remotion.dev/blog/3-0)
+
+After more than 10 months in development and 1400 commits, remotion has been reworked.
+
+**Jest**: has released [v28](https://jestjs.io/blog/2022/04/25/jest-28)
+
+Fake timers are default, Github Actions reporter, sharding on tests.
+
+**Ember**: has released [v4.3](https://blog.emberjs.com/ember-released-4-3/)
+
+No features and no deprecations, just some bug fixes.
+
+**Nuxt**: has released [v3-RC](https://nuxtjs.org/announcements/nuxt3-rc/)
+
+The first release candidate of version 3 has been announced.
+
+---
+
+## <a name="#challenge">Challenge</a>
+
+We are not using Redux every day, but still, the reducer pattern is something we can use in React directly. And they might have some problems. So let’s see if you can figure that out. (If you run code it will tell you immediately actually 😉 )
+
+```js
+function todoReducer(state, action) {
+  switch (action.type) {
+    case "ADD_TODO":
+      const todos = state.todos;
+      return { ...state, todos: todos.concat(action.payload) };
+    case "REMOVE_TODO":
+      const todos = state.todos;
+      const newTodos = todos.filter((todo) => todo.id !== action.id);
+      return { ...state, todos: newTodos };
+    default:
+      return state;
+  }
+}
+```
+
+<details>
+<summary>Explanation</summary>
+
+`const` and `let` are block-scoped. It means they need to have different scope for the same variable name for todos , or you can change the name of the variable. The new scope is defined with {} after “case".
+
+```js
+function todoReducer(state, action) {
+  switch (action.type) {
+    case "ADD_TODO": {
+      const todos = state.todos;
+      return { ...state, todos: todos.concat(action.payload) };
+    }
+    case "REMOVE_TODO": {
+      const todos = state.todos;
+      const newTodos = todos.filter((todo) => todo.id !== action.id);
+      return { ...state, todos: newTodos };
+    }
+    default:
+      return state;
+  }
+}
+```
+
+</details>
