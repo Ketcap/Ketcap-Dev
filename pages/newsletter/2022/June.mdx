@@ -1,0 +1,100 @@
+---
+type: post
+title: June 2022 Newsletter
+date: 2022-07-01
+---
+
+import Image from "next/image";
+
+[TODO Add some description]
+
+**Joke of the month:**
+
+What do you call a company that makes okay products?
+A satisfactory! 🥁
+
+<Image
+  src="/memes/june-2022.png"
+  alt="I was doing pentest in the data center the other day."
+  width={500}
+  height={500}
+/>
+
+## Contents 📋
+
+- [News & Explore](#news--explore)
+- [Challenge](#challenge)
+
+---
+
+## <a name="#news--explore">News & Explore</a>
+
+### Ecmascript 2022
+
+New standards have landed for Ecmascript, top-level await, “.at()” usage, and more…
+
+[Ecmascript 2022](https://2ality.com/2022/06/ecmascript-2022.html)
+
+### Beta React Docs
+
+React team has been working on new documentation for React. It’s looking pretty good and has better explanations.
+
+[Docs](https://beta-reactjs-org-git-you-might-not-fbopensource.vercel.app/)
+
+### Github Co-Pilot
+
+Co-Pilot beta is ending on the 22nd of August and will be paid feature. Till then, you can use it for free and test it.
+
+[CoPilot](https://github.com/features/copilot/)
+
+### Cancel async tasks
+
+AbortController provides a way to abort requests at any given point. Let’s check how that works.
+
+[AbortController](https://whistlr.info/2022/abortcontroller-is-your-friend/)
+
+### Last Minute Release Next.js
+
+Vercel team has dropped new update on Next.js just before end of the month. It includes some experimental features and some features that are now stable.
+
+[Next.js 12.2](https://nextjs.org/blog/next-12-2)
+
+### Maintaining React Component Library
+
+While making an internal react component library, the most challenging thing is maintaining it. Here are some pieces of advice about it.
+
+[Maintaining React Component Library](https://www.gabe.pizza/notes-on-component-libraries/)
+
+### Component Encyclopedia
+
+The Storybook team has cataloged the top UI components and put them in a list. There’re 5,132 components from big companies. (Airbnb, Microsoft, Zendesk… and many more)
+
+[Component Encyclopedia](https://storybook.js.org/showcase)
+
+---
+
+## <a name="#challenge">Challenge</a>
+
+We are using features of ecmascript and the different libraries but do you know what this code does?
+
+```js
+const friends = ["Neo", "Trinity", "John", "Peralta", "Jake", "Morpheus"];
+
+const { length, 0: first, [length - 1]: last } = friends;
+```
+
+<details>
+<summary>Explanation</summary>
+Using destructure is not only for objects. You can actually use for arrays too. So the case we have is actually working code that returns.
+
+```js
+{
+  length: 6,
+  0: "Neo",
+  5: "Morpheus"
+}
+```
+
+So next time when you need to access spesific location of an array you can use this.
+
+</details>
