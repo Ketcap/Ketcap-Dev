@@ -1,0 +1,152 @@
+---
+type: post
+title: May 2022 Newsletter
+date: 2022-06-01
+---
+
+import Image from "next/image";
+
+[TODO Add a description of the newsletter]
+
+**Joke of the month**
+
+Two fish are in a tank. One turns to the other and says, “okay, you man the guns. I’ll drive.” 🥁
+
+<Image
+  src="/memes/may-2022.png"
+  alt="Not a good fit!."
+  width={500}
+  height={500}
+/>
+
+## Contents 📋
+
+- [News & Explore](#news--explore)
+- [Libraries](#libraries)
+- [Challenge](#challenge)
+
+---
+
+## <a name="#news--explore">News & Explore</a>
+
+### Goodbye Lerna…
+
+At the end of April, the Lerna team announced that they would not maintain the project actively, but quickly, the project was picked up by [Nrwl](https://nrwl.io/).
+
+[Announcement: Passing the torch](https://github.com/lerna/lerna/issues/3121)
+
+### UI components powered by State Machines?
+
+Yes, you read it correctly. UI components that are framework-agnostic developed like state machines.
+
+[Zag](https://zagjs.com/)
+
+### Feature flagging a Next.js Application
+
+When the applications are sometimes growing, they need features to be flagged so they can be turned on/off depending on user/location or even randomness to see how users will react. Here’s how.
+
+[Feature Flags in Next.js](https://configcat.com/blog/2022/04/22/how-to-use-feature-flags-in-nextjs)
+
+### Same functionalities and different styles
+
+When there’s a new library, especially front-end libraries, they do the same thing differently. It would be better to see how it translates to another library. So here’s a website for that.
+
+[Component Party](https://component-party.dev/)
+
+### No more confusion between …rest and …spread
+
+When it comes to an understanding between rest and spread operators, JavaScript functionality is nearly similar, but naming might be confusing. Here’s a quick guide.
+
+[Rest or Spread](https://2ality.com/2022/05/rest-vs-spread.html)
+
+### Concurrent React and its history
+
+Everybody is talking about it working with the Concurrent features of React. Here’s a quick explanation.
+
+[The Story of Concurrent React](https://www.youtube.com/watch?v=NZoRlVi3MjQ)
+
+### In defense of the SPA
+
+William Kennedy has written an article that backs up the SPA. It’s a bit wordy but worth the read.
+
+[William Kennedy Blog](https://williamkennedy.ninja/javascript/2022/05/03/in-defence-of-the-single-page-application)
+
+### Common React errors
+
+It does not matter how long you are developing with React; you came across these errors, and here’s the solution for those.
+
+[8 common React error messages and how to address them](https://dev.to/logrocket/8-common-react-error-messages-and-how-to-address-them-34lf)
+
+### Finding components in code
+
+It has never been easier to find the components in your source code…
+
+[GitHub Repo](https://github.com/ericclemmons/click-to-component)
+
+### Text Clamping at its finest
+
+When you have to show multiple lines it’s always a burden to make the functionality for show and hide. No more…
+
+[GitHub Repo](https://github.com/drenther/use-clamp-text)
+
+### Human readable errors from TS…
+
+Well, it happened finally we can understand the Typescript and its errors.
+
+[Human Readable TS Extension](https://marketplace.visualstudio.com/items?itemName=mattpocock.ts-error-translator#tserror)
+
+### What is “useEvent”
+
+A new version of RFC on React, “useEvent” has popped up, and let’s see what is it.
+
+[What the useEvent React hook is (and isn't)](https://typeofnan.dev/what-the-useevent-react-hook-is-and-isnt/)
+
+### Zaplib and Rust(post-mortem)
+
+While Zaplib was focused on bringing Rust to web applications there are some takeaways and sunsetting project :disappointed_relieved:
+
+[Zaplib Docs](https://zaplib.com/docs/blog_post_mortem.html)
+
+### Page Transitions on Chrome
+
+While mobile apps have default transitions on page changes what about the web?
+
+[Bringing page transitions to the web](https://www.youtube.com/watch?v=JCJUPJ_zDQ4)
+
+---
+
+## <a name="#challenge">Challenge</a>
+
+When it comes to challenges on JS there are plenty. This one is particularly interesting. Let’s see if you can spot the bug and fix it 🤔
+
+```js
+class User {
+  async constructor(userId) {
+    const user = await getUser(userId)
+    this.id = user.id;
+    this.name = user.name;
+    this.email = user.email;
+  }
+}
+```
+
+<details>
+<summary>Explanation</summary>
+
+Unfortunately, JavaScript class constructors do not allow you to run “async” functions. So you need another method to do this.
+
+```js
+class User {`
+  static async init(userId) {
+    const user = await getUser(userId);
+    return new User(user);
+  }
+  constructor(user) {
+    this.id = user.id;
+    this.name = user.name;
+    this.email = user.email;
+  }
+}
+```
+
+</details>
