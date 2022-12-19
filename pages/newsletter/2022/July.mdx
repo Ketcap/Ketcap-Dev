@@ -1,0 +1,131 @@
+---
+type: post
+title: July 2022 Newsletter
+date: 2022-08-01
+---
+
+import Image from "next/image";
+
+New quarter, fresh starts (pun intended, check the first post in the news), the community and the world is getting heated. Literally…
+
+**Joke of the month:**
+
+I signed up for Binary 101, but then I failed it miserably.
+I had no idea it was a Level 5 course! 🥁
+
+<Image
+  src="/memes/july-2022.png"
+  alt="Which one are you using?"
+  width={500}
+  height={500}
+/>
+
+## Contents 📋
+
+- [News & Explore](#news--explore)
+- [Libraries](#libraries)
+- [Challenge](#challenge)
+
+---
+
+## <a name="#news--explore">News & Explore</a>
+
+Heat waves, sea waves, release waves… Whichever you enjoy this summer is going pretty interesting. Here are some releases, articles prepared for you.
+
+### Deno Web
+
+Deno has released their web framework similar to Next.js. It’s called “Fresh.”
+
+[Fresh 1.0](https://deno.com/blog/fresh-is-stable)
+
+### CSS is hard!
+
+CSS is often hard when it comes to aligning texts, images, and more… Some practical help is here for you!
+
+[Defensive CSS](https://defensivecss.dev/)
+
+### Bun but not the hamburger bun…
+
+Bun is a new JavaScript runtime like nodejs and deno. It’s faster than its similar runtimes.
+
+[Bun](https://bun.sh/)
+
+### State management
+
+It seems like the community has a couple of posts about state management, and they are really deep explanations and comparisons.
+
+[Past, present, and future of React State Management](https://leerob.io/blog/react-state-management)
+[The new wave of React state management](https://frontendmastery.com/posts/the-new-wave-of-react-state-management/)
+
+### TODO Finder
+
+Do you need to find all TODOs in your codebase and go through all of them? This extension is for you.
+
+[TODO Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+
+### Breaking down 2700 lines of React Component
+
+Refactoring and keeping things structured and clean is hard. So here’s an example of how that can be cleaned.
+
+[Refactor Large React Component](https://code.pieces.app/blog/how-to-refactor-large-react-components)
+
+### Vite release
+
+Vite bundling tool has released new major version of 3.0. What is has inside? Lower size bundle, faster bundling and more…
+
+[Vite 3.0](https://vitejs.dev/blog/announcing-vite3.html#the-ecosystem-is-ready-for-v3)
+
+### How much you can apply SOLID to React
+
+SOLID principals are one of the main principals that in programming world. How much we can apply that to React.
+
+[SOLID to React](https://konstantinlebedev.com/solid-in-react)
+
+### Consistency of States
+
+States are often underestimated things but they are accountable most parts of your application. Let’s see their state models.
+
+[The Cost of Consistency in UI Frameworks](https://dev.to/this-is-learning/the-cost-of-consistency-in-ui-frameworks-4agi)
+
+### Vercel Build Output Api
+
+Vercel has dropped new feature Build Output Api: a file system based that allows any framework to build for Vercel so you can take adventage of Vercel infrastructure.
+
+[Lee Robinson on Twitter](https://twitter.com/leeerob/status/1551368808404762624)
+[Announcing the Build Output API – Vercel](https://vercel.com/blog/build-output-api)
+
+---
+
+## <a name="#libraries">Libraries</a>
+
+**Prisma**: has released major version. V4.0 is generally available with schema changes and Prisma Data Platform.
+
+[Upgrade Guide](https://www.prisma.io/docs/guides/upgrade-guides/upgrading-versions/upgrading-to-prisma-4)
+
+**Radix UI**: Low level ui component library has just released their 1.0
+
+[Radix UI](https://www.radix-ui.com/docs/primitives/overview/releases)
+
+**Nestjs**: debugger on cli, configurable modules, and updated dependencies. Nestjs has release next major version 9.0.
+
+[Release Notes](https://trilon.io/blog/nestjs-9-is-now-available)
+
+**Mantine**: Nextgen ui kit and modular packages. Has released their major 5.0 version.
+
+[Release Notes](https://mantine.dev/changelog/5-0-0)
+
+---
+
+## <a name="#challenge">Challenge</a>
+
+Some string work needed this month from you.
+
+Given a string that has a valid email address, write a function to hide the first part of the email (before the @ sign), minus the first and last character. For extra credit, add a flag to hide the second part after the @ sign to your function excluding the first character and the domain extension.
+
+```js
+> hideEmail('email@something.com')
+> 'e***l@something.com'
+
+> hideEmail('ugur+something@something.com', hideFull)
+> 'u**********c@s******.com'
+```
