@@ -1,0 +1,373 @@
+---
+type: post
+title: August 2022 Newsletter
+date: 2022-09-01
+---
+
+import { Tab, Tabs } from "nextra-theme-docs";
+import Image from "next/image";
+
+<Tabs items={["English","Türkçe"]}>
+<Tab>
+August was a great month for me, the product I’ve been working on for 4 months has been release to the production. 🥳
+
+I’ve activated my Superpeer account and you can find me here: [https://superpeer.com/ketcap](https://superpeer.com/ketcap)
+
+I’m planning to stream at Twitch atleast twice a week: [https://www.twitch.tv/devketchuptv](https://www.twitch.tv/devketchuptv)
+
+Let’s see what else happened this month.
+
+**Joke of the month:**
+
+**Q:** 0 is a false and 1 is true, right?
+
+**A:** 1 🥁
+
+<Image src="/memes/august-2022.png" alt="" width={500} height={500} />
+
+## Contents 📋
+
+- [News & Explore](#news--explore)
+- [Libraries](#libraries)
+- [Talks and Conferences](#talks-and-conferences)
+- [Challenge](#challenge)
+
+---
+
+## <a name="#news--explore">News & Explore</a>
+
+Community is bringing more sources and knowledges and that’s the beauty of sharing the information with everyone. We hunted as much as possible to bring those to you let’s see what we have prepared for you!
+
+---
+
+### **Webhooks…**
+
+Webhooks are backbone of the API development, either for your application or for others to use your application. It’s used widely from payment services to receiving SMS messages. But there’s more to that.
+
+[Webhooks FYI](https://webhooks.fyi/)
+
+### **Modern Web Application Design Patterns**
+
+Are you curious about modern application design patterns? How it is done? What it is? Here’s a great source for you to review these.
+
+[Patterns.dev](https://www.patterns.dev/)
+
+Interactive version: [JavaScript Patterns](https://javascriptpatterns.vercel.app/)
+
+### **React Refs**
+
+Are you using “refs” effectively and correctly? Let’s find out about ref usages.
+
+[Callback Refs](https://tkdodo.eu/blog/avoiding-use-effect-with-callback-refs)
+
+### **Container Queries has landed on Chrome**
+
+Container queries help developers to query the parent selector for its size and styling. But there’s more to it.
+
+[Container Queries](https://developer.chrome.com/blog/has-with-cq-m105/)
+
+[Explanation Video](https://www.youtube.com/watch?v=jUQ2-C5ZNRc&feature=youtu.be)
+
+### **Is 3rd Part resources harming more than help?**
+
+Using third-part resources is necessary to track user behavior and even checking if you application is failing too. But they might do harm to your website/application.
+
+[Can browser Optimize the loading …](https://developer.chrome.com/blog/third-party-scripts)
+
+### **Why React Re-Renders?**
+
+We are all using `useCallback`, `useEffect`, `useMemo` constantly in React and it might cause some re-renders if you don’t use or when you use. To understand the behavior there’s an explanation.
+
+[Why React Re-Renders](https://www.joshwcomeau.com/react/why-react-re-renders/)
+
+### **Inspiring Engineering Ladders**
+
+Engineering levels/ladders change from company to company. Getting inspiration is an excellent way to improve and see how we are doing.
+
+[Engineering Ladders](https://github.com/jorgef/engineeringladders)
+
+### **Astro 1.0 release**
+
+Astro web framework has released their 1.0.
+
+[Astro 1.0](https://astro.build/blog/astro-1/)
+
+### **How to make Carousels**
+
+Carousels can be hard thing to develop and maintain. Here’s how carousels have been thought and some inspiration from Google Chrome Developers.
+
+[Thinking how to do carousels](https://www.youtube.com/watch?v=CXJv6zM003M)
+
+### **Outline is not your enemy.**
+
+Outline in CSS might be confusing and seems weird with blue outline on elements. But it’s not your enemy. There’s some usages you can check out and learn more about it.
+
+[Outline is your friend](https://www.matuzo.at/blog/2022/focus-outline/)
+
+---
+
+## <a name="#libraries">Libraries</a>
+
+**Prisma:** Database ORM, releasing 2 patches in 1 month is something Prisma would do. At the same time, bringing features and improvements to the platform. Version 4.2 has been released.
+
+[https://github.com/prisma/prisma/releases/tag/4.2.0](https://github.com/prisma/prisma/releases/tag/4.2.0)
+
+**SolidJS**: JavaScript library for creating user interfaces. Version 1.5 with bringing significant improvements.
+
+[https://github.com/prisma/prisma/releases/tag/4.2.0](https://github.com/prisma/prisma/releases/tag/4.2.0)
+
+**BlitzJS:** Fullstack toolkit with Next.js is preparing release for their new major version 2.0.
+
+[https://github.com/blitz-js/blitz/releases/tag/v2.0.0-beta.3](https://github.com/blitz-js/blitz/releases/tag/v2.0.0-beta.3)
+
+---
+
+## <a name="#talks-and-conferences">Talks and Conferences</a>
+
+### React Brussels
+
+The first react conference in Brussels will happen online and in-person on **14 Oct.** Speakers from Netflix to Postman, SolidJs to Typescript Tickets are on sale
+
+[https://www.react.brussels/](https://www.react.brussels/)
+
+### ViteConf
+
+Stackblitz is hosting Vite Conf at **11-12 Oct.** Online event and free submissions.
+
+[https://viteconf.org/](https://viteconf.org/)
+
+### Firebase Summit
+
+The 7th annual summit of Firebase will be held on the 18th of October. It’s virtual as well and free!
+
+[https://firebase.google.com/summit](https://firebase.google.com/summit)
+
+### Creative CSS Layout
+
+From web conferences in Amsterdam, they have shared their videos, and particularly this talk about creative CSS layouts is interesting.
+
+[https://www.youtube.com/watch?v=tueTFd2TQUA](https://www.youtube.com/watch?v=tueTFd2TQUA)
+
+### From 0 to 100, Story of React
+
+UI Dot Dev team has put together a video of how react entered the ecosystem and evolved.
+
+[https://www.youtube.com/watch?v=Wm_xI7KntDs](https://www.youtube.com/watch?v=Wm_xI7KntDs)
+
+---
+
+## <a name="#challenge">Challenge</a>
+
+Do you know how JavaScript works? Let’s see how deep your knowledge is!
+
+Can you tell me what the output of the code below is:
+
+```js
+console.log("First");
+
+setTimeout(function () {
+  console.log("Second");
+}, 0);
+
+new Promise(function (res) {
+  res("Third");
+}).then(console.log);
+```
+
+<details>
+<summary>Explanation</summary>
+
+**Output:** `First, Fourth, Third, Second` Congratz if you have answered correctly. 🎊
+
+If you weren’t able to answer correctly, no worries.
+
+It’s all connected to the JavaScript event loop at the end. JavaScript treats all events in a different order, and putting “0” in setTimeout does not make the timeout an immediate call.
+
+Let’s check how event loops work
+
+[Video Explanation](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+
+</details>
+</Tab>
+<Tab>
+
+Ağustos benim için güzel bir ay oldu, 4 ayda 0dan geliştirmeye başladığımız ürünümüzü yayına aldık🥳
+
+Superpeer hesabımı aktif ettim ve beni burada bulabilirsiniz: [https://superpeer.com/ketcap](https://superpeer.com/ketcap)
+
+Twitch’de haftada en az 2 gün yayın yapmayı planlıyorum: [https://www.twitch.tv/devketchuptv](https://www.twitch.tv/devketchuptv)
+
+Bakalım bu ay başka neler olmuş.
+
+**Joke of the month:**
+
+**Q:** 0 yanlış ve 1 doğru değil mi?
+
+**A:** 1 🥁
+
+<Image src="/memes/august-2022.png" alt="" width={500} height={500} />
+
+## Contents 📋
+
+- [Haberler & Keşif](#haberles-kesif)
+- [Kütüphaneler](#kutuphaneler)
+- [Konuşmalar ve Etkinlikler](#konusmalar-etkinlikler)
+- [Meydan Okuma](#meydan-okuma)
+
+---
+
+## <a id="haberles-kesif" name="#haberles-kesif">Haberler & Keşif</a>
+
+Topluluk birçok kaynağı ve bildiklerini bir araya getiriyor, ve bunu herkes ile yapmak bunun en güzel yanı. Sizin için olabildiğince kaynağı toparlamaya çalıştım.
+
+---
+
+### **Webhooks…**
+
+Webhooklar API geliştirmede önemli bir yere sahiptir, uygulamanız için yada diğer uygulamalar için. Çok yaygın bir şekilde kullanılan bu teknoloji ödeme servislerinden SMS servislerine kadar geniş bir alanda kullanılır. Dahada bilgi sahibi olmak isterseniz
+
+[Webhooks FYI](https://webhooks.fyi/)
+
+### **Modern Web Uygulama Tasarım Modelleri**
+
+Modern web uygulama tasarım modellerini merak ediyor musunuz? Nasıl yapılıyor? Nedir? Sizler için güzel bir kaynak.
+
+[Patterns.dev](https://www.patterns.dev/)
+
+Interactive version: [JavaScript Patterns](https://javascriptpatterns.vercel.app/)
+
+### **React Refs**
+
+“refs”i efektif ve doğru kullanıyor musunuz? Bakalım nasıl kullanılıyorlar.
+
+[Callback Refs](https://tkdodo.eu/blog/avoiding-use-effect-with-callback-refs)
+
+### **Container Query’leri Chromeda yayınlandı**
+
+Container Query’leri uygulamalarda “parent selector” kullanarak sizlere daha iyi bir “styling” sağlar. Ve daha fazlası…
+
+[Container Queries](https://developer.chrome.com/blog/has-with-cq-m105/)
+
+[Explanation Video](https://www.youtube.com/watch?v=jUQ2-C5ZNRc&feature=youtu.be)
+
+### 3’cü Parti kaynaklar yaradan çok zarar mı?
+
+3cu parti kaynaklar çoğu zaman kullanıcının nasıl davrandığı takibi yada uygulamanız doğru çalışıyor mu diye kullanmış olabilirsiniz. Aam bunlar uygulamanıza/websitenize zarar veriyor olabilir.
+
+[Can browser Optimize the loading …](https://developer.chrome.com/blog/third-party-scripts)
+
+### Neden **React Yeniden Render’lar**
+
+Hepimiz React’da sürekli `useCallback`, `useEffect`, `useMemo` kullanıyoruz, nasıl ve neden kullandığınızı bilmezseniz yeniden Render’lara sebep olabilir. Bu davranışların nasıl çalıştığına bakalım.
+
+[Why React Re-Renders](https://www.joshwcomeau.com/react/why-react-re-renders/)
+
+### İlham veren **Engineering Seviyeleri**
+
+Engineerin seviyeleri şirketler arasında değişiklik gösterir. Bunu geliştirmek ve daha iyi yapmak için en iyi yol ilham almak ve diğerlerini incelemektir.
+
+[Engineering Ladders](https://github.com/jorgef/engineeringladders)
+
+### **Astro 1.0 yayınladı**
+
+Astro web framework’u 1.0 versiyonunu yayınladı.
+
+[Astro 1.0](https://astro.build/blog/astro-1/)
+
+### **Carousel’ler nasıl yapılır?**
+
+Carousel’ler geliştirmesi ve sürdülür olması zor olan yapılardan biridir. Google Chrome geliştiricileri Carousel’lerin nasıl düşündüklerini ve nasıl geliştirdiklerini ilham almanı için yayınladı.
+
+[Thinking how to do carousels](https://www.youtube.com/watch?v=CXJv6zM003M)
+
+### **Outline düşmanınız değil.**
+
+CSS’de bulunan “outline” özelliği (mavi çerçeve) kimisi için kafa karıştırıcı ve garip bulabilir. Ama bu onu sizin düşmanınız yapmaz. Nasıl kullanıldığı ve bazı örneklerine bakalım.
+
+[Outline is your friend](https://www.matuzo.at/blog/2022/focus-outline/)
+
+---
+
+## <a id="kutuphaneler" name="#kutuphaneler">Kütüphaneler</a>
+
+**Prisma:** Database ORM, releasing 2 patches in 1 month is something Prisma would do. At the same time, bringing features and improvements to the platform. Version 4.2 has been released.
+
+[https://github.com/prisma/prisma/releases/tag/4.2.0](https://github.com/prisma/prisma/releases/tag/4.2.0)
+
+**SolidJS**: JavaScript library for creating user interfaces. Version 1.5 with bringing significant improvements.
+
+[https://github.com/prisma/prisma/releases/tag/4.2.0](https://github.com/prisma/prisma/releases/tag/4.2.0)
+
+**BlitzJS:** Fullstack toolkit with Next.js is preparing release for their new major version 2.0.
+
+[https://github.com/blitz-js/blitz/releases/tag/v2.0.0-beta.3](https://github.com/blitz-js/blitz/releases/tag/v2.0.0-beta.3)
+
+---
+
+## <a id="konusmalar-etkinlikler" name="#konusmalar-etkinlikler">Konuşmalar ve Etkinlikler</a>
+
+### React Brussels
+
+Brüksel’de ilk defa gerçekleşicek olan bu etkinlik hem online ve hemde etkinlik alanında 14 Ekim tarihinde gerçekleşecek. Netflix’den Postman’e, Solid.js’den Typescript’e konuşmacılar mevcut. Biletleri websitesinde satışta.
+
+[https://www.react.brussels/](https://www.react.brussels/)
+
+### ViteConf
+
+Stackblitz Vite Conf’u 11-12 Ekim tarihlerinde online ve bedava bir şekilde gerçekleştirecek.
+
+[https://viteconf.org/](https://viteconf.org/)
+
+### Firebase Summit
+
+Yıllık düzenlenen, bu sene 7cisi 18 Ekim tarihnde online ve ücretsiz olarak gerçekleşicek Firebase Summit’ine kaydolmayı unutmayın!
+
+[https://firebase.google.com/summit](https://firebase.google.com/summit)
+
+### Yaratıcı CSS Layout’u
+
+Amsterdam web konferansı konuşmaları online bir şekilde meraklılarına sundu ve özellikle CSS Layout ile ilgili bu konuşma bir hayli ilginç.
+
+[https://www.youtube.com/watch?v=tueTFd2TQUA](https://www.youtube.com/watch?v=tueTFd2TQUA)
+
+### 0’dan 100’e, React’ın Hikayesi
+
+UI Dot Dev ekibi React’In nasılda ekosisteme girdiğini ve evrildiğini anlattığı videosunu yayınladı.
+
+[https://www.youtube.com/watch?v=Wm_xI7KntDs](https://www.youtube.com/watch?v=Wm_xI7KntDs)
+
+---
+
+## <a id="meydan-okuma" name="#meydan-okuma">Meydan Okuma</a>
+
+JavaScript’in nasıl çalıştığını biliyor musunuz? Bilginiz ne kadar derin görelim!
+
+Aşşağıdaki kodun çıktısı ne olucak söyleyebilir misin?
+
+```
+console.log('First')
+
+setTimeout(function () {
+  console.log('Second')
+}, 0)
+
+new Promise(function (res) {
+  res('Third')
+}).then(console.log)
+```
+
+<details>
+<summary>Cevap</summary>
+    
+Çıktı**:** `First, Fourth, Third, Second` Eğer sizde böyle tahmin etti iseniz tebrikler 🎊
+
+Eğer tahmininiz doğru değilse, üzülmeyin.
+
+Örnekdeki herşey tamami ile JavaScriptin “event loop”u ile ilgili. JavaScript “event”leri farklı sıralarda işliyor ve “setTimeout”u 0 ile çalıştırmak onun hemen çağırılıcağı anlamına gelmiyorç. Bakalım “event loop” nasıl çalışıyor
+
+[Video](https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=emb_title)
+
+</details>
+
+</Tab>
+</Tabs>
