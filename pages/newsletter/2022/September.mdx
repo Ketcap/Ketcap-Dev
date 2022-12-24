@@ -1,0 +1,243 @@
+---
+type: post
+title: September 2022 Newsletter
+date: 2022-10-01
+---
+
+import { Tab, Tabs } from "nextra-theme-docs";
+import Image from "next/image";
+
+<Tabs items={["English","Türkçe"]}>
+<Tab>
+
+Fall is here 🍂, valuable releases, things you might not know, and more significant attention to TypeScript.
+Let’s see what has been going on!
+
+<Image src="/memes/september-2022.png" alt="" width={500} height={500} />
+
+## Contents 📋
+
+- [News & Explore](#news--explore)
+- [Libraries](#libraries)
+- [Challenge](#challenge)
+
+---
+
+## <a name="#news--explore">News & Explore</a>
+
+### **Signals…**
+
+Preact (3kb version of React) has introduced a new way of state management to their library. Meta itself is not new; this meta was used on multiple other libraries, which might be pushing React much more…
+
+[Introducing Signals – Preact](https://preactjs.com/blog/introducing-signals/)
+
+### **Is a better console possible?**
+
+While debugging applications on the browser, sometimes a console is the best way to see the behavior. Did you know your Chrome Console can do much better?
+
+[How to speed up your workflow with Console shortcuts | DevTools Tips](https://www.youtube.com/watch?v=hdRDTj6ObiE)
+
+### **You might know these JS APIs**
+
+JS environment is getting bigger and bigger; browser APIs are extending every release. You might have missed these.
+
+[JavaScript APIs You Don’t Know About — Smashing Magazine](https://www.smashingmagazine.com/2022/09/javascript-api-guide/)
+
+Safari is bringing more: [WebKit Features in Safari 16.0](https://webkit.org/blog/13152/webkit-features-in-safari-16-0/)
+
+### **Should I write my own JS framework?**
+
+There’s a debate going on in the community about writing your own JS framework. For you, we have found the answer.
+
+Article: [Should I write a new JavaScript framework?](https://whitep4nth3r.com/blog/should-i-write-a-new-javascript-framework/)
+
+Answer: [Should I write a new JavaScript framework?](https://should-i-write-a-new-javascript-framework.lol/)
+
+### **Improve LCP to faster load times**
+
+Largest Contentful Paint (LCP) is a Core Web Vital metric to track how many seconds it takes to paint your application. And improving that metric means faster applications. What can we do about it?
+
+[How To Improve Largest Contentful Paint for Faster Load Times - Calibre](https://calibreapp.com/blog/largest-contentful-paint)
+
+### **Can JS do that?**
+
+Did you know JS can do Optical Character Recognition(OCR)? Your browser or your node.js application can do that for you, so you don’t need any other language for this.
+
+[naptha/tesseract.js](https://github.com/naptha/tesseract.js)
+
+### **Attention to TS**
+
+Typescript can be annoying to solve and hard to figure out sometimes. But once you have learned, TS is another programming language. Here are some courses, websites, and workshops we have for you to extend your TS knowledge.
+
+[Type-Level TypeScript — Introduction](https://type-level-typescript.com/)
+
+[total-typescript](https://github.com/total-typescript)
+
+Bonus: Translate your TS errors to human readable form [mattpocock/ts-error-translator](https://github.com/mattpocock/ts-error-translator)
+
+---
+
+## <a name="#libraries">Libraries</a>
+
+**Timezone Library**
+
+[spacetime](http://spacetime.how/)
+
+**Router**
+
+[React Router 6.4 Release](https://remix.run/blog/react-router-v6.4)
+
+**Styled-components**
+
+V6 is on the way
+
+[https://github.com/styled-components/styled-components/releases](https://github.com/styled-components/styled-components/releases)
+
+**Prisma**
+
+Prisma has released 4.3, and they have a preview feature for the multi schema.
+
+[https://github.com/prisma/prisma/issues/1122#issuecomment-1231773471](https://github.com/prisma/prisma/issues/1122#issuecomment-1231773471)
+
+**Typescript**
+
+Microsoft has released its new version of Typescript; it’s in beta right now but bringing many valuable features.
+
+[https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-beta/](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-beta/)
+
+---
+
+## <a name="#challenge">Challenge</a>
+
+Let’s see how much you know generators in JavaScript and if you are able to use them. Let’s write a function that produces a generator, and for each call, it will give numbers between the first parameters, including both ends. See the example for more.
+
+```js
+let gen = fromTo(5, 7);
+// 2
+gen();
+// 5
+gen();
+// 6
+gen();
+// 7
+gen();
+// undefined
+```
+
+</Tab>
+<Tab>
+
+Sonbahar geldi 🍂, değerli yeni versiyonlar, bilmediğimiz şeyler , ve TypeScript’e gösterilen daha çok ilgi. Bakalım neler olup bitiyor.
+
+<Image src="/memes/september-2022.png" alt="" width={500} height={500} />
+
+## İçerik 📋
+
+- [Haberler & Keşif](#haberles-kesif)
+- [Kütüphaneler](#kutuphaneler)
+- [Meydan Okuma](#meydan-okuma)
+
+## <a id="haberles-kesif" name="#haberles-kesif">Haberler & Keşif</a>
+
+### Signals…
+
+Preact (React’ın 3kb’lık versiyonu) yeni state management kütüphanesini tanıttı. Bu state management aslında yeni değil daha önce başka kütüphanelerde yayınlandı ve kullanıldı, belkide bu React’ı biraz daha bunun için zorlayabilir.
+
+[Introducing Signals – Preact](https://preactjs.com/blog/introducing-signals/)
+
+### Daha iyi bi console mümkün mü ?
+
+Uygulamalarınızı tarayıcılarda debug ederken, console bazen davranışları görmek için güzel bir yöntem olabilir. Chrome Console’u daha iyisini yapabilir mi?
+
+[How to speed up your workflow with Console shortcuts | DevTools Tips](https://www.youtube.com/watch?v=hdRDTj6ObiE)
+
+### Bu JS API’larını bilmiyor olabilirsiniz
+
+JS komunitesi gittikçe dahada büyüyor; tarayıcıların API’ları her yeni versiyondan dahada genişliyor. Bunları belkide bilmiyor yada kaçırmış olabilirsiniz.
+
+[JavaScript APIs You Don’t Know About — Smashing Magazine](https://www.smashingmagazine.com/2022/09/javascript-api-guide/)
+
+Safari biraz daha özellik getiriyor: [WebKit Features in Safari 16.0](https://webkit.org/blog/13152/webkit-features-in-safari-16-0/)
+
+### Kendi JavaScript frameworkümü yazmalı mıyım?
+
+Komunitede kendi JS frameworkünü yazmak üzerine tartışmalar büyüyor. Cevabı, sizler için bulduk.
+
+Makale: [Should I write a new JavaScript framework?](https://whitep4nth3r.com/blog/should-i-write-a-new-javascript-framework/)
+
+Cevap: [Should I write a new JavaScript framework?](https://should-i-write-a-new-javascript-framework.lol/)
+
+### LCP’yi iyileştirerek daha iyi yükleme zamanları
+
+Largest Contentful Paint (LCP), Core Web Vital’da önemli metrik ve uygulamanızı tarayıca resim etmenin ne kadar sürdüğünü gösteriyor. Ve bunu iyileştirmek ise daha hızlı uygulamalar demek. Bunun için ne mi yapabilirsiniz?
+
+[How To Improve Largest Contentful Paint for Faster Load Times - Calibre](https://calibreapp.com/blog/largest-contentful-paint)
+
+### JS bunu yapabilir mi ?
+
+JS’nin Optik Karakter Tanımlama yapabildiğini biliyor muydunuz? Tarayıcınız, node.js uygulamanız sizin yerinize bunu yapabilir, siz başka dillerde bunu yapmakla uğraşmayın diye.
+
+[naptha/tesseract.js](https://github.com/naptha/tesseract.js)
+
+### TS’a ilgi
+
+TypeScript sorunları çözerken yada birşeyleri anlamaya çalışırken sinir bozucu olabiliyor. Ama bir kere öğrenildiğinde, TS ayrı bir dil. Sizler için kurslar, websiteleri ve workshopları, TS bilginizi genişletmek için topladık.
+
+[Type-Level TypeScript — Introduction](https://type-level-typescript.com/)
+
+[total-typescript](https://github.com/total-typescript)
+
+Bonus: TS hatalarınızı okunur bir hale getiren bir eklenti [mattpocock/ts-error-translator](https://github.com/mattpocock/ts-error-translator)
+
+---
+
+## <a id="kutuphaneler" name="#kutuphaneler">Kütüphaneler</a>
+
+**Timezone**
+
+[spacetime](http://spacetime.how/)
+
+**React Router**
+
+[React Router 6.4 Release](https://remix.run/blog/react-router-v6.4)
+
+**Styled-components**
+
+V6 yeni versiyonu yolda.
+
+[https://github.com/styled-components/styled-components/releases](https://github.com/styled-components/styled-components/releases)
+
+**Prisma**
+
+Prisma 4.3 versiyonunu yayınladı, ve çoklu şema özelliği ön izlemede.
+
+[https://github.com/prisma/prisma/issues/1122#issuecomment-1231773471](https://github.com/prisma/prisma/issues/1122#issuecomment-1231773471)
+
+**Typescript**
+
+Microsoft yeni TypeScript versiyonunu yayınladı; şu an beta sürümünde olan versiyonu önemli özelliklerle geliyor.
+
+[https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-beta/](https://devblogs.microsoft.com/typescript/announcing-typescript-4-9-beta/)
+
+---
+
+## <a id="meydan-okuma" name="#meydan-okuma">Meydan Okuma</a>
+
+Bakalım ‘generators’ u JavaScript’de ne kadar biliyorsunuz ve kullanabiliyor musunuz.
+Generator üreten bir fonksiyon yazalım ve her çağırıldığında verilen 2 sayı arasındaki sayıları versin (başlangıç ve bitiş sayıları dahil).
+Örneği aşağıda bulabilirsiniz.
+
+```js
+let gen = fromTo(5, 7);
+gen();
+// 5
+gen();
+// 6
+gen();
+// 7
+gen();
+// undefined
+```
+
+  </Tab>
+  </Tabs>
