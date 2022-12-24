@@ -1,19 +1,18 @@
 ---
 type: post
-title: [Month] [Year] Newsletter
-date: 2022-03-01
+title: TEMPLATE YEAR Newsletter
+date: 2022-10-01
 ---
 
+import { Tab, Tabs } from "nextra-theme-docs";
 import Image from "next/image";
 
-Some Description
+<Tabs items={["English","Türkçe"]}>
+<Tab>
 
-<Image
-  src="/memes/february-2022.png"
-  alt="Why do it yourself when you can automate it"
-  width={500}
-  height={500}
-/>
+[Description]
+
+<Image src="/memes/september-2022.png" alt="" width={500} height={500} />
 
 ## Contents 📋
 
@@ -25,34 +24,87 @@ Some Description
 
 ## <a name="#news--explore">News & Explore</a>
 
-[TODO TEXT]
+### **Signals…**
 
-### [TITLE]
+Preact (3kb version of React) has introduced a new way of state management to their library. Meta itself is not new; this meta was used on multiple other libraries, which might be pushing React much more…
 
-[DESCRIPTION]
-
-[Link](XXXX)
+[Introducing Signals – Preact](https://preactjs.com/blog/introducing-signals/)
 
 ---
 
 ## <a name="#libraries">Libraries</a>
 
-**XXXX**: has released [vX.X](XX)
+**Timezone Library**
+
+[spacetime](http://spacetime.how/)
 
 ---
 
 ## <a name="#challenge">Challenge</a>
 
-[Description]
+Let’s see how much you know generators in JavaScript and if you are able to use them. Let’s write a function that produces a generator, and for each call, it will give numbers between the first parameters, including both ends. See the example for more.
 
 ```js
-// Time 14:00 UTC
-let humans = [
-    { name: 'John', timezone: 'UTC−1:00' },
-    { name: 'Neo', timezone: 'UTC+2:00' }
-    { name: 'Trinity', timezone: 'UTC−3:00' }
-]
-
-localTime('Neo')
-16:00pm // Check the time above to see if it's correct (it will change on your usage and when you run)
+let gen = fromTo(5, 7);
+// 2
+gen();
+// 5
+gen();
+// 6
+gen();
+// 7
+gen();
+// undefined
 ```
+
+</Tab>
+<Tab>
+
+[Aciklama]
+
+<Image src="/memes/september-2022.png" alt="" width={500} height={500} />
+
+## İçerik 📋
+
+- [Haberler & Keşif](#haberles-kesif)
+- [Kütüphaneler](#kutuphaneler)
+- [Meydan Okuma](#meydan-okuma)
+
+## <a id="haberles-kesif" name="#haberles-kesif">Haberler & Keşif</a>
+
+### Signals…
+
+Preact (React’ın 3kb’lık versiyonu) yeni state management kütüphanesini tanıttı. Bu state management aslında yeni değil daha önce başka kütüphanelerde yayınlandı ve kullanıldı, belkide bu React’ı biraz daha bunun için zorlayabilir.
+
+[Introducing Signals – Preact](https://preactjs.com/blog/introducing-signals/)
+
+---
+
+## <a id="kutuphaneler" name="#kutuphaneler">Kütüphaneler</a>
+
+**Timezone**
+
+[spacetime](http://spacetime.how/)
+
+---
+
+## <a id="meydan-okuma" name="#meydan-okuma">Meydan Okuma</a>
+
+Bakalım ‘generators’ u JavaScript’de ne kadar biliyorsunuz ve kullanabiliyor musunuz.
+Generator üreten bir fonksiyon yazalım ve her çağırıldığında verilen 2 sayı arasındaki sayıları versin (başlangıç ve bitiş sayıları dahil).
+Örneği aşağıda bulabilirsiniz.
+
+```js
+let gen = fromTo(5, 7);
+gen();
+// 5
+gen();
+// 6
+gen();
+// 7
+gen();
+// undefined
+```
+
+  </Tab>
+  </Tabs>
