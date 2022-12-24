@@ -1,0 +1,253 @@
+---
+type: post
+title: October 2022 Newsletter
+date: 2022-11-01
+---
+
+import { Tab, Tabs } from "nextra-theme-docs";
+import Image from "next/image";
+
+<Tabs items={["English","Türkçe"]}>
+<Tab>
+
+Halloween parties have been thrown, and winter is on our door but grab your coffee and get under your blanket; this newsletter is just for you.
+
+**Joke of the month**
+
+Why don’t vampires learn from their mistakes?
+
+They can’t self-reflect. 🥁
+
+<Image src="/memes/october-2022.png" alt="" width={500} height={500} />
+
+## Contents 📋
+
+- [News & Explore](#news-explore)
+- [Read & Watch](#read-watch)
+- [Libraries](#libraries)
+- [Challenge](#challenge)
+
+---
+
+## <a id='news-explore' name="#news-explore">News & Explore</a>
+
+The highlight of the month for the news is Next.js 13 and NextConf. Bringing amazing features, pushing the community and other libraries forward. Let’s see what else was on our radar.
+
+### Next.js 13
+
+Vercel (the company behind Next.js) has been working on a lot of features for Next.js; here are some of them:
+
+- Layouts, loading, and error state for pages/folders.
+- Server first default and React Server Components
+- Dynamic HTML streaming
+- Turbopack, the successor to Webpack, up to 700x faster performance.
+- Many more…
+
+Conference recordings: [https://nextjs.org/conf](https://nextjs.org/conf)
+
+Next.js 13 beta docs: [https://beta.nextjs.org/docs](https://beta.nextjs.org/docs) (tip: you can leave comments on the page for the team)
+
+You didn’t hear from us but one of the core members of React team said: “This release is the actual release for React 18.”
+
+### The Good, The Bad, and the Ugly
+
+Is CSS-in-JS bad? How does it work, and what are the benefits at what cost? Sam Magura (2nd most active maintainer of the Emotion CSS library) has written all about it.
+
+[Blog post](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)
+
+### Node.js 19
+
+The node team has worked pretty hard to release a new version, and it’s finally available. And “Current” node.js is not “18” and enters long-term support.
+
+[Node 19 Release](https://nodejs.org/en/blog/announcements/v19-release-announce/)
+
+### Are the decorators finally ready?
+
+JavaScript decorators have finally reached stage 3 of [TC39 process](https://exploringjs.com/impatient-js/ch_history.html#tc39-process). Typescript support is on the way as well.
+
+[Decorators](https://2ality.com/2022/10/javascript-decorators.html)
+
+### Signal Boosting…
+
+Preact team has been working on “Signal” for quite some time and they have now introduced React bindings for the “Signal” so you don’t have to use it only on Preact.
+
+[Signal Boosting](https://preactjs.com/blog/signal-boosting/)
+
+### Halloween is here… 🎃
+
+For your Halloween-themed websites, we found a UI library for you to use and scare your visitors. (we don’t take any responsibility if visitors close your website)
+
+[Dracula UI](https://ui.draculatheme.com/welcome)
+
+### Better Navigation
+
+GitHub has released a new feature for its actions page. Now users can navigate better and understand what it is. [GitHub Blog](https://github.blog/2022-10-20-improving-navigation-for-github-actions)
+
+### Background and Scheduled API
+
+Netlify team has introduced a feature to be supported on Next.js. Now, your Next.js API routes can do background tasks and scheduled API calls. [Netlify blog](https://www.netlify.com/blog/new-background-scheduled-api-routes-nextjs)
+
+### Async/Await Components?
+
+Wait for a second async/await isn’t for functions. How they will be working for Components? To find out, let’s see the discussion. [GitHub issue](https://github.com/acdlite/rfcs/blob/first-class-promises/text/0000-first-class-support-for-promises.md)
+
+### Improve loading times with Next.js
+
+The Causal team has migrated their project to Next.js from CRA and reduced loading times by 70% . [Blog post](https://www.causal.app/blog/next-js)
+
+---
+
+## <a id='read-watch' name="#read-watch">Read & Watch</a>
+
+[Protect yourself from burnout…](https://leaddev.com/self-care-burnout/four-ways-protect-yourself-burnout)
+
+[What if your team hates your functional code…](https://jrsinclair.com/articles/2022/what-if-the-team-hates-my-functional-code/)
+
+[Nextjs Conf](https://nextjs.org/conf)
+
+[Making React Context Fast](https://www.youtube.com/watch?v=ZKlXqrcBx88)
+
+---
+
+## <a name="#libraries">Libraries</a>
+
+**Prisma:** lovely ORM framework has released v4.5. [Release notes.](https://github.com/prisma/prisma/releases/tag/4.5.0)
+
+**Turbopack:** Vercel’s new webpack successor. [Alpha is out.](https://turbo.build/pack/docs)
+
+---
+
+## <a name="#challenge">Challenge</a>
+
+Do you trust your JS skills? Can you spot the bug without running the following code:
+
+```js
+const petName = "Leo";
+const placeholder = "{NAME}";
+const reminderTemplate =
+  "{NAME} is due for another visit. Please call us so we can set up a new appointment. We look forward to seeing you and {NAME} soon.";
+
+const reminder = reminderTemplate.replace(placeholder, petName);
+```
+
+</Tab>
+<Tab>
+
+29 Ekim Cumhuriyet Bayramı kutlamaları yapıldı, kış kapıda, öyleyse kahvenizi ve battaniyenizi aldıysanız bu aylık makale sizlere göre.
+
+<Image src="/memes/september-2022.png" alt="" width={500} height={500} />
+
+## İçerik 📋
+
+- [Haberler & Keşif](#haberles-kesif)
+- [Oku & Izle](#oku-izle)
+- [Kütüphaneler](#kutuphaneler)
+- [Meydan Okuma](#meydan-okuma)
+
+## <a id="haberles-kesif" name="#haberles-kesif">Haberler & Keşif</a>
+
+Next.js 13’ün yayınlanması ve NextConf bu ayın önemli olaylarından biri. Gelen süper özellikler, komuniteyi ve diğer kütüphaneleri iyi bir yönde etkileyebililr. Bakalım radarımızda başka neler var.
+
+### Next.js 13
+
+Vercel (Next.js’in arkasındaki şirket) yayınlanan özellikler için sıkı bir çalışma gerçekleştirdiler; bir kaçına şöyle bir bkalaım
+
+- Layout’lar, yüklenme ve hata durumlarını destekleyen sayfalar ve componentler.
+- Varsayınlan server önceliği ve React Server Components
+- Dinamik HTML streaming
+- Turbopack, Webpack’in yeni varisi, ve 700 kata varan daha hızlı bir performans.
+- Ve daha fazlası…
+
+Next.js 13 için Beta olarak yayınlanan dökümantasyon sayfasına linkten ulaşabilirsiniz. Ufak bir tüyo sayfada giriş yaptığınız zaman istediğiniz yere geri bildirim bırakabilirsiniz. [https://beta.nextjs.org/docs](https://beta.nextjs.org/docs)
+
+Bizden duymuş olmayın ama React takımının ana üyelerinden biri “Bu Next.js sürümünün asıl React 18 olduğunu söyledi.”
+
+### İyi, Güzel, Çirkin
+
+CSS-in-JS kötü mü? Nasıl çalışıyor, getirileri neye mal oluyor? Sam Magura(Emotion kütüphanesinin 2ci aktif geliştiricisi) bunu hakkında bir makale hazırlamış, bir bakalım.
+
+[Blog post](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)
+
+### Node.js 19
+
+Node geliştirme takımı yeni versiyonu yayınladı ve sonunda tamamen erişilebilir halde. Bu sürüm ile Node.js 18 sürümü ise uzun süreli desteğe geçti.
+
+[Node 19 Release](https://nodejs.org/en/blog/announcements/v19-release-announce/)
+
+### “Decorators” sonunda hazır mı?
+
+JavaScript decarators sonunda [TC-39](https://exploringjs.com/impatient-js/ch_history.html#tc39-process) sürecinde sonuncu aşamada. TypeScript desteği ise yolda.
+
+[Decorators](https://2ality.com/2022/10/javascript-decorators.html)
+
+### Signal Güçlendirmesi…
+
+Preact takımı “Signal” özelliği üzerinde uzun zamandır çalışıyor ve yeni sürümde ise React için destek getirdi. Bu sürüm sayesinde artık “Signals” sadece Preact için değil.
+
+[Signal Boosting](https://preactjs.com/blog/signal-boosting/)
+
+### Cadılar bayramı geldi 🎃
+
+Cadılar bayramı temalı websiteniz için sizlere rahatlıkla kullanabiliceğiniz UI kütüphanesini bulduk. Ziyaretcileriniz korkup kaçarsa sorumluluk almıyoruz
+
+[Dracula UI](https://ui.draculatheme.com/welcome)
+
+### Daha İyi Navigasyon
+
+GitHub “Actions” sayfası için yeni bir özellik yayınladı. Bu özellik sayesinde “Actions” sayfasında daha iyi bir navigasyon saylayacak.
+
+[GitHub Blog](https://github.blog/2022-10-20-improving-navigation-for-github-actions)
+
+### Arkaplan ve Zamanlı API
+
+Netlify takımı Next.js destekli yeni özelliklerini tanıttılar. Bu özellik sayesinde Next.js projenizde API dizinini arkaplanda çalışabilicek fonksiyonlara yer verebilicek ve zamanlı fonksiyonlar çağırabiliceksiniz. [Netlify blog](https://www.netlify.com/blog/new-background-scheduled-api-routes-nextjs)
+
+### Async/Await Components?
+
+Evet, yanlış görmediniz Componentler’de Async/Await’den bahsediyorum, async await aslında fonksiyonlar için değil mi diyebilirsiniz. Bakalım nasıl çalışıcaklar.
+
+[GitHub issue](https://github.com/acdlite/rfcs/blob/first-class-promises/text/0000-first-class-support-for-promises.md)
+
+### Next.js ile yükleme zamanı iyileştirmesi
+
+Causal takımı projelerini “CRA”dan Next.js e geçirerek yüklenmesi süresini 70% dahada kısalttı.
+
+[Blog post](https://www.causal.app/blog/next-js)
+
+---
+
+## <a id="oku-izle" name="#oku-izle">Oku ve Izle</a>
+
+[Protect yourself from burnout…](https://leaddev.com/self-care-burnout/four-ways-protect-yourself-burnout)
+
+[What if your team hates your functional code…](https://jrsinclair.com/articles/2022/what-if-the-team-hates-my-functional-code/)
+
+[Nextjs Conf](https://nextjs.org/conf)
+
+[Making React Context Fast](https://www.youtube.com/watch?v=ZKlXqrcBx88)
+
+---
+
+## <a id="kutuphaneler" name="#kutuphaneler">Kütüphaneler</a>
+
+**Prisma:** sevilen ORM framework’ü v4.5 sürümünü yayınladı. [Release notes.](https://github.com/prisma/prisma/releases/tag/4.5.0)
+
+**Turbopack:** Vercel’in yeni Webpack varisi [Alpha is out.](https://turbo.build/pack/docs)
+
+---
+
+## <a id="meydan-okuma" name="#meydan-okuma">Meydan Okuma</a>
+
+JS yeteneğinize güveniyor musunuz? Bakalım aşağıdaki kodu çalıştırmadan oluşacak hatayı farkedebilicek misiniz?
+
+```js
+const petName = "Leo";
+const placeholder = "{NAME}";
+const reminderTemplate =
+  "{NAME} is due for another visit. Please call us so we can set up a new appointment. We look forward to seeing you and {NAME} soon.";
+
+const reminder = reminderTemplate.replace(placeholder, petName);
+```
+
+  </Tab>
+  </Tabs>
