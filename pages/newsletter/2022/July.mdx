@@ -4,11 +4,15 @@ title: July 2022 Newsletter
 date: 2022-08-01
 ---
 
-import { Tab, Tabs } from "nextra-theme-docs";
+import { Tabs } from "@mantine/core";
 import Image from "next/image";
 
-<Tabs items={["English","Türkçe"]}>
-<Tab>
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
 New quarter, fresh starts (pun intended, check the first post in the news), the community and the world is getting heated. Literally…
 
 **Joke of the month:**
@@ -134,8 +138,8 @@ Given a string that has a valid email address, write a function to hide the firs
 > 'u**********c@s******.com'
 ```
 
-</Tab>
-<Tab>
+</Tabs.Panel>
+<Tabs.Panel value="tr">
 
 Yeni bir çeyrek, fresh başlangıçlar(espri içerir, yazıdaki ilk posta bakın), topluluk ve dünya giderek alevleniyor…
 
@@ -154,13 +158,13 @@ Dersin 5ci seviye olduğundan haberim yoktu… 🥁
 
 ## Contents 📋
 
-- [News & Explore](#news--explore)
-- [Libraries](#libraries)
-- [Challenge](#challenge)
+- [Haberler & Keşif](#haberles-kesif)
+- [Kütüphaneler](#kutuphaneler)
+- [Meydan Okuma](#meydan-okuma)
 
 ---
 
-## <a name="#news--explore">News & Explore</a>
+## <a id="haberles-kesif" name="#haberles-kesif">Haberler & Keşif</a>
 
 Sıcak hava dalgaları, deniz dalgalar, release dalgaları. Hangisi ile daha çok eğleniyorsanız, bu yaz ilginç geçecek. Sizler için release’leri ve makaleleri derledim.
 
@@ -232,7 +236,7 @@ Vercel Build Output Api adı verdiği istediğiniz herhangi bir frameworku build
 
 [https://vercel.com/blog/build-output-api](https://vercel.com/blog/build-output-api)
 
-## <a name="#libraries">Libraries</a>
+## <a id="kutuphaneler" name="#kutuphaneler">Kütüphaneler</a>
 
 **Prisma:** ana versiyonunu güncelledi ve 4.0’ı yayına aldı. Schema değişiklikleri ve Prisma Data platformu yayınlandı.
 
@@ -252,7 +256,7 @@ Vercel Build Output Api adı verdiği istediğiniz herhangi bir frameworku build
 
 ---
 
-## <a name="#challenge">Ev ödevi</a>
+## <a id="meydan-okuma" name="#meydan-okuma">Meydan Okuma</a>
 
 Bu ay sizlerden stringle alakalı bazı işlemler yapmanızı isteyeceğim.
 
@@ -270,6 +274,6 @@ Bu ödeve ekstra zorluk eklemek isterseniz ekstra parametre ile fonksiyon email�
 > 'u**********c@s******.com'
 ```
 
-</Tab>
+</Tabs.Panel>
 
 </Tabs>

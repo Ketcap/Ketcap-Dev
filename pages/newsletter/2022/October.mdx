@@ -4,11 +4,15 @@ title: October 2022 Newsletter
 date: 2022-11-01
 ---
 
-import { Tab, Tabs } from "nextra-theme-docs";
+import { Tabs } from "@mantine/core";
 import Image from "next/image";
 
-<Tabs items={["English","Türkçe"]}>
-<Tab>
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
 
 Halloween parties have been thrown, and winter is on our door but grab your coffee and get under your blanket; this newsletter is just for you.
 
@@ -130,8 +134,8 @@ const reminderTemplate =
 const reminder = reminderTemplate.replace(placeholder, petName);
 ```
 
-</Tab>
-<Tab>
+</Tabs.Panel>
+<Tabs.Panel value="tr">
 
 29 Ekim Cumhuriyet Bayramı kutlamaları yapıldı, kış kapıda, öyleyse kahvenizi ve battaniyenizi aldıysanız bu aylık makale sizlere göre.
 
@@ -249,5 +253,6 @@ const reminderTemplate =
 const reminder = reminderTemplate.replace(placeholder, petName);
 ```
 
-  </Tab>
-  </Tabs>
+</Tabs.Panel>
+
+</Tabs>

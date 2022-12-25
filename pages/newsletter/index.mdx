@@ -1,5 +1,42 @@
 ---
 type: posts
-title: Newsletter List
+title: Newsletters
 date: 2022-01-01
 ---
+
+import { Tabs } from "@mantine/core";
+
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
+Hello, welcome to my monthly newsletter series.
+You can find the newsletters in 2 language Turkish and English.
+Feel free to ready both of them. They have same content always.
+
+If you have any feedback to newsletter or to me feel free to reach me out.
+
+💌 Email: [feedback@ketcap.dev](mailto:feedback@ketcap.dev)
+
+If you want to register to the newsletter send an empty email so that you email will be added to the list.
+
+💌 Email for signup: [newsletter-signup@ketcap.dev](mailto:newsletter-signup@ketcap.dev)
+
+</Tabs.Panel>
+<Tabs.Panel value="tr">
+Merhaba, aylık makaleler serime hoşgeldiniz. Burada aylık makaleleri 2 dilde Türkçe ve İngilizce olarak bulabilirsiniz.
+2sinide okumaktan çekinmeyin. 2side aynı içerikleri barındırmaktadır.
+
+Eğer herhangi bir geribildiriminiz olursa bana ulaşmaktan çekinmeyin.
+
+💌 Email: [feedback@ketcap.dev](mailto:feedback@ketcap.dev)
+
+Eğer makaleler için aylık bültene kayıt olmak isterseniz bana boş email atarak listeye kayıt olabilirsiniz.
+
+💌 Kayıt için Email: [newsletter-signup@ketcap.dev](mailto:newsletter-signup@ketcap.dev)
+
+</Tabs.Panel>
+
+</Tabs>

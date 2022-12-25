@@ -4,11 +4,15 @@ title: August 2022 Newsletter
 date: 2022-09-01
 ---
 
-import { Tab, Tabs } from "nextra-theme-docs";
+import { Tabs } from "@mantine/core";
 import Image from "next/image";
 
-<Tabs items={["English","Türkçe"]}>
-<Tab>
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
 August was a great month for me, the product I’ve been working on for 4 months has been release to the production. 🥳
 
 I’ve activated my Superpeer account and you can find me here: [https://superpeer.com/ketcap](https://superpeer.com/ketcap)
@@ -188,8 +192,8 @@ Let’s check how event loops work
 [Video Explanation](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
 </details>
-</Tab>
-<Tab>
+</Tabs.Panel>
+<Tabs.Panel value="tr">
 
 Ağustos benim için güzel bir ay oldu, 4 ayda 0dan geliştirmeye başladığımız ürünümüzü yayına aldık🥳
 
@@ -369,5 +373,6 @@ Eğer tahmininiz doğru değilse, üzülmeyin.
 
 </details>
 
-</Tab>
+</Tabs.Panel>
+
 </Tabs>

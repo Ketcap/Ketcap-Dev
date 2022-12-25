@@ -4,11 +4,15 @@ title: November 2022 Newsletter
 date: 2022-12-01
 ---
 
-import { Tab, Tabs } from "nextra-theme-docs";
+import { Tabs } from "@mantine/core";
 import Image from "next/image";
 
-<Tabs items={["English","Türkçe"]}>
-<Tab>
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
 
 Welcome to the November edition of our monthly newsletter! In this issue, we have a lot of exciting news and updates to share with you. From highlights from the past month to upcoming events, there's a lot to catch up on. We hope you enjoy reading this newsletter and encourage you to share it with others. Thanks for being a part of our community, and we look forward to staying connected with you in the coming month.
 
@@ -154,9 +158,8 @@ console.log(updatedValues);
 // should print [3, 10, 15]
 ```
 
-</Tab>
-<Tab>
-
+</Tabs.Panel>
+<Tabs.Panel value="tr">
 Merhaba! Bu ayki haber bültenimizin Kasım sayısına hoş geldiniz! Bu sayıda, paylaşmak için heyecan verici haberler ve güncellemeler var. Geçen ayın öne çıkanlarından gelecekteki etkinliklere kadar, burada okumaya değecek çok şey var. Bu haber bültenini okumayı keyifli bulacağınızı umuyoruz ve başkalarıyla paylaşmanızı teşvik ediyoruz. Topluluğumuza katılımınız için teşekkür ederiz ve gelecek ayda sizinle iletişimde kalmayı dört gözle bekliyoruz.
 
 Okuduğunuz bu giriş yazısı sizlere “chat.openapi” tarafından yazıldı. Sizler için bazı şakalarda hazırladı.
@@ -298,5 +301,6 @@ console.log(updatedValues);
 // should print [3, 10, 15]
 ```
 
-  </Tab>
-  </Tabs>
+</Tabs.Panel>
+
+</Tabs>

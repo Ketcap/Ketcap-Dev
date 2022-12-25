@@ -4,12 +4,16 @@ title: September 2022 Newsletter
 date: 2022-10-01
 ---
 
-import { Tab, Tabs } from "nextra-theme-docs";
+import { Tabs } from "@mantine/core";
 import Image from "next/image";
 
-<Tabs items={["English","Türkçe"]}>
-<Tab>
-
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
+  
 Fall is here 🍂, valuable releases, things you might not know, and more significant attention to TypeScript.
 Let’s see what has been going on!
 
@@ -124,8 +128,8 @@ gen();
 // undefined
 ```
 
-</Tab>
-<Tab>
+</Tabs.Panel>
+<Tabs.Panel value="tr">
 
 Sonbahar geldi 🍂, değerli yeni versiyonlar, bilmediğimiz şeyler , ve TypeScript’e gösterilen daha çok ilgi. Bakalım neler olup bitiyor.
 
@@ -239,5 +243,6 @@ gen();
 // undefined
 ```
 
-  </Tab>
-  </Tabs>
+</Tabs.Panel>
+
+</Tabs>
