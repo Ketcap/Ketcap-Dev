@@ -4,11 +4,15 @@ title: December 2022 Newsletter
 date: 2023-01-01
 ---
 
-import { Tab, Tabs } from "nextra-theme-docs";
+import { Tabs } from "@mantine/core";
 import Image from "next/image";
 
-<Tabs items={["English","Türkçe"]}>
-<Tab>
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
 
 We have finished 2022, hope you have all achived your goals, and new year will be better than the last one with your loved ones. Let's kick off 2023 with newsletter 🎉
 
@@ -99,8 +103,8 @@ replaceZeros("123456789");
 
 This Challange is brought to you from Cassidy Williams, you can subscribe her newsletter [here](https://cassidoo.co/newsletter/).
 
-</Tab>
-<Tab>
+</Tabs.Panel>
+<Tabs.Panel value="tr">
 
 2022'yi bitirdik, umarım istediğiniz hedeflere ulaşmış, ve yeni yılınız bir öncekinden sevdiklerinizle ve daha da iyi olur. 2023'u yeni bir sayı ile başlatalım. 🎉
 
@@ -191,5 +195,5 @@ replaceZeros("123456789");
 
 Bu meydan okuma size Cassidy Williams tarafından getirildi, onun newsletterına [linkten](https://cassidoo.co/newsletter/) kayıt olabilirsiniz.
 
-  </Tab>
-  </Tabs>
+</Tabs.Panel>
+</Tabs>

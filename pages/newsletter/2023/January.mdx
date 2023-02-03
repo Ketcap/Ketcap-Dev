@@ -1,0 +1,242 @@
+---
+type: post
+title: January 2023 Newsletter
+date: 2023-02-01
+---
+
+import { Tabs } from "@mantine/core";
+import Image from "next/image";
+
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
+
+# January 2023 📅
+
+It has been a good run on 2022 and it's now time to look back review what happened
+and look to the future. Let's keep it short and get in to it.
+
+<Image src="/memes/january-2023.png" alt="" width={500} height={500} />
+
+## Contents 📋
+
+1. [News & Explore](#news--explore)
+2. [Read & Watch](#read-watch)
+3. [Challenge](#challenge)
+
+---
+
+## <a id="news--explore">News & Explore</a>
+
+### Typescript 5.0 Beta is out
+
+Decorators, improved support on ESM, satisfies, const type parameters, speed optimizations and many more
+
+[TypeScript 5.0 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta)
+
+### Astro 2.0 is out
+
+%33 faster, 90% less javascript sent to user, Astro is coming hot in 2023. Hybird rendering, vite updates many more...
+
+[Astro 2](https://astro.build/blog/astro-2/)
+
+### How to clone object in JS.
+
+No, it's not "JSON.parse(JSON.stringify(obj))" or "\_.cloneDeep(obj)", there's a new API available in browsers for you to use: "structuredClone(obj)".
+
+[Structured Clone](https://www.builder.io/blog/structured-clone)
+
+### How many use states to use?
+
+In react applicatiosn usage of "useState" can go far than you needed or expected. There might be easy way to fix it.
+
+[useReducer](https://www.builder.io/blog/use-reducer)
+
+### Optimizing selectors on css
+
+Using excessive amount of selectors or spesificying too much can have css performance issues. Microsoft dev team wrote some tips and tricks
+
+[Windows Blog Post](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/)
+
+### State of JS 2022 is out
+
+The State of JS is one of the biggest JS ecosystem survey and this time there's ~40.000 people participating it.
+
+[State of JS](https://2022.stateofjs.com/)
+
+### Use cases of ref
+
+How many use case of "ref" you are aware in React. And did you know all of the use cases are easy to apply and improve your react skills.
+
+[useRef](https://julesblom.com/writing/ref-callback-use-cases)
+
+### Math in React
+
+Do you need to visualize math expressions on react, or just draw a great circle for your users some lines as well with it. Mafs is just for you
+
+[mafs](https://mafs.dev/)
+
+---
+
+## <a id="read-watch">Read & Watch</a>
+
+[Deep dive into Typescript 5.0](https://www.totaltypescript.com/tips/typescript-5-0-beta-deep-dive)
+
+[Next.js 13.1 explained](https://youtu.be/_q1K7cybyRk)
+
+[Supabase Auth in 3 Minutes](https://www.youtube.com/watch?v=6ch1PtIqCUw)
+
+[Why you should use React Framework](https://leerob.substack.com/p/react-frameworks)
+
+[Databases on Serverless and Edge](https://leerob.substack.com/p/databases-serverless-edge)
+
+---
+
+## <a id="challenge">Challenge</a>
+
+We would like to zip our arrays to a new array so we can have 1 array output instead of 2.
+Let’s create a function called zipWith (or anything you like) that will that 3 arguments:
+
+1. A function that takes 2 number arguments and returns number as a result.
+
+2. An array that has length of X with random numbers
+
+3. An array that has length of X with random numbers
+
+Your function should return array that has length of X with the numbers that is zipped with the function that is defined on first argument. Example:
+
+```js
+zipWith(Math.pow, [1, 2, 3, 4], [0, 1, 2, 3]); //  [1,2,9,64]
+zipWith(Math.min, [1, 4, 7, 1, 4, 7], [4, 7, 1, 4, 7, 1]); //  [1,4,1,1,4,1]
+
+// or
+
+zipWith((a, b) => a + b, [0, 1, 2, 3], [0, 1, 2, 3]); //  [0,2,4,6]
+```
+
+Notes: You can assume both arrays are same length but if you want to challenge yourself more some additional requirements you can find below:
+
+- Arrays can be different length.
+  - Should thrown error when it’s different
+- It can work with multiple types not just number.
+- Adding generic types to accept arguments in the function depending on the arrays that is passed.
+
+</Tabs.Panel>
+<Tabs.Panel value="tr">
+
+# Ocak 2023 📅
+
+Güzel bir 2022 idi ve şimdi bakalım neler olmuş ve sonra ise geleceğe bakalım. Uzatmadan hemen içeriğe geçelim.
+
+<Image src="/memes/january-2023.png" alt="" width={500} height={500} />
+
+## İçerik 📋
+
+1. [Haberler & Keşif](#haberles-kesif)
+2. [Kütüphaneler](#kutuphaneler)
+3. [Meydan Okuma](#meydan-okuma)
+
+---
+
+## <a id="haberles-kesif" id="haberles-kesif">Haberler & Keşif</a>
+
+### Typescript 5.0 Beta yayınlandı
+
+Decorator, ESM desteği, satisfies, const type parametreleri, hız optimizasyonları ve daha fazlası!
+
+[TypeScript 5.0 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-beta)
+
+### Astro 2.0 yayınlandı
+
+%33 daha hızlı, kullanıcıya gönderilen javascript %90 az, Astro 2023 yılında hızlı geliyor. Hybird rendering, vite güncellemeleri ve daha fazlası...
+
+[Astro 2](https://astro.build/blog/astro-2/)
+
+### JS'de object nasıl klonlanır
+
+Hayır, "JSON.parse(JSON.stringify(obj))" değil yada "\_.cloneDeep(obj)". Kullanabileceğiniz yeni bir API var: "structuredClone(obj)".
+
+[Structured Clone](https://www.builder.io/blog/structured-clone)
+
+### Kaç tane 'state' kullanılıcak?
+
+React uygulamalarında "useState" kullanımı çok ileri gidebilir ve hatta beklediğinizden fazla olabilir. Bunların çözümü aslında kolay olabilir.
+
+[useReducer](https://www.builder.io/blog/use-reducer)
+
+### CSS'de Selector optimizasyonu
+
+Gereğinden fazla kullanılan seçiciler veya çok fazla belirtilen seçiciler css performans sorunlarına neden olabilir. Microsoft geliştirme ekibi bazı ipuçları ve püf noktaları yazdı.
+
+[Windows Blog Post](https://blogs.windows.com/msedgedev/2023/01/17/the-truth-about-css-selector-performance/)
+
+### State of JS 2022 çıktı
+
+State of JS, JS ekosistemi anketlerinden en büyüklerinden biri ve bu sefer ~40.000 kişi katıldı.
+
+[State of JS](https://2022.stateofjs.com/)
+
+### 'ref'in kullanım alanları
+
+React'te "ref" kullanım alanları hakkında ne kadar bilginiz var. Buradaki tüm kullanım alanları aslında kolay ve React becerilerinizi geliştirebilir.
+
+[useRef](https://julesblom.com/writing/ref-callback-use-cases)
+
+### React'da Matematik
+
+React'da matematiksel ifadeleri görselleştirmeniz mi gerekiyor, yoksa kullanıcılarınıza harika daireler mi çizmelisiniz. Eğer öyle ise Mafs size göre.
+
+[mafs](https://mafs.dev/)
+
+---
+
+## <a id="read-watch">Read & Watch</a>
+
+[TypeScript 5.0'a derin bakış](https://www.totaltypescript.com/tips/typescript-5-0-beta-deep-dive)
+
+[Next.js 13.1 hakkında](https://youtu.be/_q1K7cybyRk)
+
+[3 Dakika'da Supabase Auth](https://www.youtube.com/watch?v=6ch1PtIqCUw)
+
+[Neden React Framework'ü kullanmalısınız ?](https://leerob.substack.com/p/react-frameworks)
+
+[Serverless ve Edge'de Database](https://leerob.substack.com/p/databases-serverless-edge)
+
+---
+
+## <a id="meydan-okuma" id="meydan-okuma">Meydan Okuma</a>
+
+2 farklı diziyi tek bir dizi olarak sıkıştırmak istiyoruz, böylece 2 diziden yerine 1 dizi çıktı alabiliriz.
+
+İlk argüman olarak tanımlanan fonksiyonla sıkıştırılmış sayıları içeren X uzunluğunda bir dizi döndüren zipWith (ya da istediğiniz bir şey) adında bir fonksiyon oluşturalım.
+
+- 2 sayı argümanı alan ve sayı sonuç döndüren bir fonksiyon
+- X uzunluğunda rastgele sayılar içeren bir dizi
+- X uzunluğunda rastgele sayılar içeren bir dizi
+
+Örnek:
+
+We would like to zip our arrays to a new array so we can have 1 array output instead of 2.
+Let’s create a function called zipWith (or anything you like) that will that 3 arguments:
+
+```js
+zipWith(Math.pow, [1, 2, 3, 4], [0, 1, 2, 3]); //  [1,2,9,64]
+zipWith(Math.min, [1, 4, 7, 1, 4, 7], [4, 7, 1, 4, 7, 1]); //  [1,4,1,1,4,1]
+
+// or
+
+zipWith((a, b) => a + b, [0, 1, 2, 3], [0, 1, 2, 3]); //  [0,2,4,6]
+```
+
+Notlar: Her iki dizinin aynı uzunlukta olduğunu varsayabilirsiniz, dahada zorlastirmak isterseniz ek gereksinimleri aşağıda bulabilirsiniz:
+
+- Diziler farklı uzunlukta olabilir.
+  - Farklı olduğunda bir hata atılmalıdır.
+- Sadece sayılarla sınırlı değil, çoklu türlerle çalışabilir.
+- Fonksiyona geçirilen dizilere bağlı olarak argümanları kabul etmek için generic type eklemek.
+
+</Tabs.Panel>
+</Tabs>
