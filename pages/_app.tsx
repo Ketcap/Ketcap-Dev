@@ -1,8 +1,10 @@
 import { Analytics } from "@vercel/analytics/react";
 import Head from "next/head";
 import { MantineProvider } from "@mantine/core";
+import { useColorScheme } from "@mantine/hooks";
 
 function MyApp({ Component, pageProps }) {
+  const preferredColorScheme = useColorScheme();
   return (
     <>
       <Head>
@@ -15,7 +17,7 @@ function MyApp({ Component, pageProps }) {
         withGlobalStyles
         withNormalizeCSS
         theme={{
-          colorScheme: "dark",
+          colorScheme: preferredColorScheme,
         }}
       >
         <Component {...pageProps} />
