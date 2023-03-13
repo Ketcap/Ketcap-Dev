@@ -1,0 +1,226 @@
+---
+type: post
+title: January 2023 Newsletter
+date: 2023-02-01
+---
+
+import { Tabs } from "@mantine/core";
+import Image from "next/image";
+
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
+
+# February 2023 📅
+
+If you haven't heard there was an earthquake in Turkey. It was a 7.8 magnitude earthquake and it was the biggest earthquake in Turkey in the last 100 years.
+We hope everyone is safe and sound. I'll share some resources that you can use to help people in need.
+
+[Ahbap](https://ahbap.org/disasters-turkey)
+[Darüşşafaka](https://fonzip.com/darussafaka/kampanya/noluyo-ya-guzel-bir-hayatin-olsun)
+
+<Image src="/memes/february-2023.png" alt="" width={500} height={500} />
+
+## Contents 📋
+
+1. [News & Explore](#news-explore)
+2. [Read & Watch](#read-watch)
+3. [Challenge](#challenge)
+
+---
+
+## <a id="news-explore">News & Explore</a>
+
+### The core of Open-Source: core-js, What's Next
+
+All of us use at least some packages from NPM or Yarn. But did you know most of those libraries and even the websites you are using like
+Amazon, Twitch, Netflix, Reddit and many more are using a library called core-js . The creator of the library has something to say to all of us...
+
+[What's Next](https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md)
+
+### Next.js 13.2 release
+
+Next.js does not slow down at all. Now they bring, mdx support for server components,
+metadata API for your pages to create metadata for each page easily, progressive ISR and faster re-deployments on code changes with Cache, and many more...
+
+[Next.js](https://nextjs.org/blog/next-13-2)
+
+### Gastby Acquisition
+
+At the starting of the February, Netlify acquired Gatsby Inc. (developers of open source framework Gatsby) to accelerate the adoption of composable web architectures.
+
+[Acquisition](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/)
+
+### Angular with Signals
+
+Angular is joining the party with others by bringing Signals to their framework.
+And for further explanation about the RFC to see how it's working and how it should be used you can find in the link below.
+
+[Angular Signals](https://angular-signals.netlify.app/)
+
+### iOS with Web Push...
+
+Apple has finally added web notifications to their software with iOS and iPadOS 16.4 Beta, and finally brought support for web notifications to the phone.
+
+[Webkit Post](https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/)
+
+### Webviews and HTML for Native Apps
+
+Yes, you have heard it right! You can create desktop applications (cross-platform) with Node.js and HTML. like you are writing your own web applications.
+
+[NodeGUI](https://github.com/nodegui/nodegui)
+
+---
+
+## <a id="read-watch">Read & Watch</a>
+
+[Astro 2.0 Island Architecture and React 🎧](https://www.whiskeywebandwhatnot.fm/astro-20-island-architecture-and-react-with-fred-k-schott/)
+
+[Publish a library on NPM on 90 Minutes 📺](https://www.youtube.com/watch?v=aKTSC4D1GL8)
+
+[Documentary about React📺](https://www.youtube.com/watch?v=8pDqJVdNa44)
+
+[Testing Speed on Runtime Validators (ZOD, SuperStruct, Yup, Typebox) 📰](https://dev.to/nicklucas/typescript-runtime-validators-and-dx-a-type-checking-performance-analysis-of-zodsuperstructyuptypebox-5416)
+
+[How to create good pr? 📰](https://www.danijelavrzan.com/posts/2023/02/create-pull-request/)
+
+[Find the WHY 📰](https://www.jason.af/find-the-why)
+
+---
+
+## <a id="challenge">Challenge</a>
+
+How much do you trust your knowledge of how JS works? This one is for you to test your brain debugging skills.
+Can you guess what a and b will be after running the function?
+
+```js
+let a = 0;
+const b = [1, 2, 3, 4, 5].map((x) => ((a += x), x * x));
+
+console.log(a); // ?
+console.log(b); // ?
+```
+
+Notes: You can assume both arrays are same length but if you want to challenge yourself more some additional requirements you can find below:
+
+- Arrays can be different length.
+  - Should thrown error when it’s different
+- It can work with multiple types not just number.
+- Adding generic types to accept arguments in the function depending on the arrays that is passed.
+
+</Tabs.Panel>
+<Tabs.Panel value="tr">
+
+# Şubat 2023 📅
+
+Hepimizin bildigi uzere gectigimiz ay olan deprem bircok insani etkiledi. Herkesin zaten bu konu hakkinda yeterince bilgi sahibi oldugunu tahmin ediyorum.
+Kendim yararli gordugum bir iki yardim kampanyasini sizlerle paylasmak istedim.
+
+[Ahbap](https://ahbap.org/disasters-turkey)
+[Darüşşafaka](https://fonzip.com/darussafaka/kampanya/noluyo-ya-guzel-bir-hayatin-olsun)
+
+<Image src="/memes/january-2023.png" alt="" width={500} height={500} />
+
+## İçerik 📋
+
+1. [Haberler & Keşif](#haberles-kesif)
+2. [Kütüphaneler](#kutuphaneler)
+3. [Meydan Okuma](#meydan-okuma)
+
+---
+
+## <a id="haberles-kesif" id="haberles-kesif">Haberler & Keşif</a>
+
+#### Open-Source'un çekirdeği: core-js, Sırada ne var?
+
+Hepimiz NPM veya Yarn'dan en az birkaç paket kullanıyoruz. Ama core-js adlı bir kütüphaneyi biliyor musunuz?
+Bu kütüphane, Amazon, Twitch, Netflix, Reddit ve daha birçok web sitesinin kullanıyor olmasıyla da dikkat çekiyor. Kütüphanenin yaratıcısı, bize bir şeyler söylemek istiyor...
+
+[What's Next](https://github.com/zloirock/core-js/blob/master/docs/2023-02-14-so-whats-next.md)
+
+### Next.js 13.2 release
+
+Next.js yavaşlamadan yoluna devam ediyor. Şimdi de server componentler için mdx desteği,
+sayfalarınız için metadata API'si ile sayfalarınızın metadata'larını kolayca oluşturabilirsiniz,
+progressive ISR ve kod değişikliklerinde daha hızlı yeniden dağıtımlar Cache ile birlikte ve daha fazlası...
+
+[Next.js](https://nextjs.org/blog/next-13-2)
+
+### Gastby Acquisition
+
+Şubat başında Netlify, Gatsby Inc.'yi (Gatsby'nin açık kaynak çatısı geliştiricileri) satın aldı ve composable web mimarisinin hızlı yayılmasını hızlandırmak için birleşti.
+
+[Acquisition](https://www.netlify.com/press/netlify-acquires-gatsby-inc-to-accelerate-adoption-of-composable-web-architectures/)
+
+### Angular with Signals
+
+Angular partiye katılıyor ve diğerleriyle birlikte "signal"i kendi çatısına ekliyor. Daha fazla açıklama ve RFC için aşağıdaki bağlantıyı ziyaret edebilirsiniz.
+
+[Angular Signals](https://angular-signals.netlify.app/)
+
+### iOS with Web Push...
+
+Apple sonunda iOS ve iPadOS 16.4 Beta ile web bildirimlerini ekledi ve artık telefonlar için web bildirimlerini desteği geldi.
+
+[Webkit Post](https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/)
+
+### Webviews and HTML for Native Apps
+
+Evet doğru duydunuz! Node.js ve HTML ile masaüstü uygulamaları oluşturabilirsiniz ve bunları web uygulaması yazar gibi yazabilirsiniz.
+
+[NodeGUI](https://github.com/nodegui/nodegui)
+
+---
+
+## <a id="read-watch">Izle & Oku</a>
+
+[Astro 2.0 Dinamik Ada Yapısı ve React 🎧](https://www.whiskeywebandwhatnot.fm/astro-20-island-architecture-and-react-with-fred-k-schott/)
+
+[90 dakikada NPM'de kütüphane yayınlamak 📺](https://www.youtube.com/watch?v=aKTSC4D1GL8)
+
+[React Dökümantasyonu📺](https://www.youtube.com/watch?v=8pDqJVdNa44)
+
+[Çalışma zamanlı doğrulayıcı hız testleri(ZOD, SuperStruct, Yup, Typebox) 📰](https://dev.to/nicklucas/typescript-runtime-validators-and-dx-a-type-checking-performance-analysis-of-zodsuperstructyuptypebox-5416)
+
+[Nasıl iyi PR açılır? 📰](https://www.danijelavrzan.com/posts/2023/02/create-pull-request/)
+
+[NEDEN'i bulmak 📰](https://www.jason.af/find-the-why)
+
+---
+
+## <a id="meydan-okuma" id="meydan-okuma">Meydan Okuma</a>
+
+2 farklı diziyi tek bir dizi olarak sıkıştırmak istiyoruz, böylece 2 diziden yerine 1 dizi çıktı alabiliriz.
+
+İlk argüman olarak tanımlanan fonksiyonla sıkıştırılmış sayıları içeren X uzunluğunda bir dizi döndüren zipWith (ya da istediğiniz bir şey) adında bir fonksiyon oluşturalım.
+
+- 2 sayı argümanı alan ve sayı sonuç döndüren bir fonksiyon
+- X uzunluğunda rastgele sayılar içeren bir dizi
+- X uzunluğunda rastgele sayılar içeren bir dizi
+
+Örnek:
+
+We would like to zip our arrays to a new array so we can have 1 array output instead of 2.
+Let’s create a function called zipWith (or anything you like) that will that 3 arguments:
+
+```js
+zipWith(Math.pow, [1, 2, 3, 4], [0, 1, 2, 3]); //  [1,2,9,64]
+zipWith(Math.min, [1, 4, 7, 1, 4, 7], [4, 7, 1, 4, 7, 1]); //  [1,4,1,1,4,1]
+
+// or
+
+zipWith((a, b) => a + b, [0, 1, 2, 3], [0, 1, 2, 3]); //  [0,2,4,6]
+```
+
+Notlar: Her iki dizinin aynı uzunlukta olduğunu varsayabilirsiniz, dahada zorlastirmak isterseniz ek gereksinimleri aşağıda bulabilirsiniz:
+
+- Diziler farklı uzunlukta olabilir.
+  - Farklı olduğunda bir hata atılmalıdır.
+- Sadece sayılarla sınırlı değil, çoklu türlerle çalışabilir.
+- Fonksiyona geçirilen dizilere bağlı olarak argümanları kabul etmek için generic type eklemek.
+
+</Tabs.Panel>
+</Tabs>
