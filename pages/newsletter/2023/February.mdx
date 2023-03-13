@@ -104,13 +104,6 @@ console.log(a); // ?
 console.log(b); // ?
 ```
 
-Notes: You can assume both arrays are same length but if you want to challenge yourself more some additional requirements you can find below:
-
-- Arrays can be different length.
-  - Should thrown error when it’s different
-- It can work with multiple types not just number.
-- Adding generic types to accept arguments in the function depending on the arrays that is passed.
-
 </Tabs.Panel>
 <Tabs.Panel value="tr">
 
@@ -193,34 +186,16 @@ Evet doğru duydunuz! Node.js ve HTML ile masaüstü uygulamaları oluşturabili
 
 ## <a id="meydan-okuma" id="meydan-okuma">Meydan Okuma</a>
 
-2 farklı diziyi tek bir dizi olarak sıkıştırmak istiyoruz, böylece 2 diziden yerine 1 dizi çıktı alabiliriz.
-
-İlk argüman olarak tanımlanan fonksiyonla sıkıştırılmış sayıları içeren X uzunluğunda bir dizi döndüren zipWith (ya da istediğiniz bir şey) adında bir fonksiyon oluşturalım.
-
-- 2 sayı argümanı alan ve sayı sonuç döndüren bir fonksiyon
-- X uzunluğunda rastgele sayılar içeren bir dizi
-- X uzunluğunda rastgele sayılar içeren bir dizi
-
-Örnek:
-
-We would like to zip our arrays to a new array so we can have 1 array output instead of 2.
-Let’s create a function called zipWith (or anything you like) that will that 3 arguments:
+JS bilginize ne kadar güveniyorsunuz? Bu soru size JS'in nasıl çalıştığını test etmeniz için bir fırsat sunuyor.
+Fonksiyonu çalıştırdıktan sonra a ve b'nin ne olacağını tahmin edebilir misiniz?
 
 ```js
-zipWith(Math.pow, [1, 2, 3, 4], [0, 1, 2, 3]); //  [1,2,9,64]
-zipWith(Math.min, [1, 4, 7, 1, 4, 7], [4, 7, 1, 4, 7, 1]); //  [1,4,1,1,4,1]
+let a = 0;
+const b = [1, 2, 3, 4, 5].map((x) => ((a += x), x * x));
 
-// or
-
-zipWith((a, b) => a + b, [0, 1, 2, 3], [0, 1, 2, 3]); //  [0,2,4,6]
+console.log(a); // ?
+console.log(b); // ?
 ```
-
-Notlar: Her iki dizinin aynı uzunlukta olduğunu varsayabilirsiniz, dahada zorlastirmak isterseniz ek gereksinimleri aşağıda bulabilirsiniz:
-
-- Diziler farklı uzunlukta olabilir.
-  - Farklı olduğunda bir hata atılmalıdır.
-- Sadece sayılarla sınırlı değil, çoklu türlerle çalışabilir.
-- Fonksiyona geçirilen dizilere bağlı olarak argümanları kabul etmek için generic type eklemek.
 
 </Tabs.Panel>
 </Tabs>
