@@ -1,0 +1,101 @@
+---
+type: post
+title: June 2023 Newsletter
+date: 2023-07-01
+---
+
+import { Tabs } from "@mantine/core";
+import Image from "next/image";
+
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
+
+# June 2023 📅
+
+## Contents 📋
+
+1. [News & Explore](#news--explore)
+2. [Read & Watch](#read--watch)
+3. [Challenge](#challenge)
+
+---
+
+Summer has officially arrived and it's time to enjoy the sun. But before that let's see what happened in the last month.
+
+Before we move forward I'd like to give shoutout to [Nurçin](https://twitter.com/nurcinozer) for her newsletter [Nurçin's Newsletter](https://www.nurcin.dev/weekly)(She is posting weekly so you are gonna like it.)
+
+## <a href='#news--explore'>News & Explore</a>
+
+### Massive Bug on npm Ecosystem
+
+npm is one of the biggest package managers for JavaScript ecosystem along side with [Yarn](https://yarnpkg.com/) and [PNPM](https://pnpm.io/). But this does not mean it's better and most secure system. Ex-Staff-Engineer from npm CLI team mentioned the issue where: when you install a package can lead to un-secure installs and execution of malicious scripts.
+
+[Massive bug](https://blog.vlt.sh/blog/the-massive-hole-in-the-npm-ecosystem)
+
+### styled-components big release
+
+[styled-components](https://github.com/styled-components/styled-components/tree/v6.0.0) is a go to tool for engineers to `style` their components in their apps. Now there's a new version of the package(v6). Before updating make sure you go through the breaking changes.
+
+[Breaking Changes](https://styled-components.com/docs/faqs#what-do-i-need-to-do-to-migrate-to-v6)
+
+### Vercel with the updates
+
+Vercel(company behind Next.js) has released a software development kit for AI apps, built with React and Svelte. What this means is that while integrating any LLM to your project by using OpenAI, LangChain or Hugging Face you don't need to go through long development cycle to make sure the integration works properly.
+
+[Vercel AI SDK](https://vercel.com/blog/introducing-the-vercel-ai-sdk?mkt_tok=MDAxLUxSRy0xOTQAAAGMowk6df5s9rD9KtG8lNSAyZqjh9G-xErey8eFBGpzvq9MbzPnfuDvlQp15v2SdJd6YBo1Kqbety30hmonltwWJ4yRM21P90n4q93yQjUx)
+
+### Nest.js upgrades to V10
+
+Nestjs one of the Node.js backend frameworks has got update to v10. Brings `swc` to complie TypeScript, Redis wildcard supports, dropping Node 12 support, upgrading TypeScript version.
+
+[Nest.js v10](https://trilon.io/blog/nestjs-10-is-now-available)
+
+---
+
+## <a href="#read--watch">Read & Watch</a>
+
+[Cost of JavaScript](https://www.youtube.com/watch?v=ZKH3DLT4BKw) 📺
+
+[Don't be nice, be kind](https://www.jason.af/be-kind/) 📰
+
+[Streaming on the Web](https://vercel.com/blog/an-introduction-to-streaming-on-the-web?ck_subscriber_id=1010788714) 📰
+
+[Get it done](https://boz.com/articles/get-it-done) 📰
+
+---
+
+## <a href='#challenge'>Challenge</a>
+
+Javascript is always an interesting language to show us to it's skills. Some of those skills can be good, bad, ugly. Let's see without running this code piece if you can figure out what will be logged.
+
+```js
+let sharedVariable = "initial";
+
+setTimeout(() => {
+  sharedVariable = "updated by first timeout";
+}, 500);
+
+setTimeout(() => {
+  if (sharedVariable === "initial") {
+    console.log("Shared variable not yet updated");
+  } else {
+    console.log("Shared variable was already updated");
+  }
+}, 500);
+```
+
+### Answer
+
+The answer is "Shared variable was already updated" but that does not mean this will be always true. Because JavaScript puts the `setTimeout` function on an event loop first setTimeout will be called out first. So if you swap the orders of `setTimeout` you will receive "Shared variable not yet updated". So be careful while playing with this.
+
+</Tabs.Panel>
+<Tabs.Panel value="tr">
+
+Çeviri henüz hazırlanmadı, katkı sağlamak isterseniz (GitHub)[https://github.com/Ketcap/Ketcap-Dev/issues/5]
+
+</Tabs.Panel>
+</Tabs>
