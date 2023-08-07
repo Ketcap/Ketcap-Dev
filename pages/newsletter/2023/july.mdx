@@ -1,0 +1,113 @@
+---
+type: post
+title: July 2023 Newsletter
+date: 2023-08-01
+---
+
+import { Tabs } from "@mantine/core";
+import Image from "next/image";
+
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
+
+# July 2023 📅
+
+## Contents 📋
+
+1. [News & Explore](#news--explore)
+2. [Read & Watch](#read--watch)
+3. [Challenge](#challenge)
+
+---
+
+Hot days are here, time to enjoy the sun. Let's dig deep into newsletter to find what has been going on in the last month.
+
+<Image src="/memes/july-2023.png" alt="" width={500} height={500} />
+
+## <a href='#news--explore'>News & Explore</a>
+
+### Prisma 5.0
+
+Prisma is unstoppable… Team has been non stop developing, fixing and release new versions of Prisma. While the newsletter has been prepared they have already released 5.1…
+
+[GitHub Release Changes](https://github.com/prisma/prisma/releases/tag/5.0.0)
+
+[Prisma](https://www.prisma.io/docs/guides/upgrade-guides/upgrading-versions/upgrading-to-prisma-5)
+
+### Let’s Understand RSC Better
+
+RSC has been out for a good time and understanding of this is really important so you can make most out of it.
+
+[Understanding RSC](https://vercel.com/blog/understanding-react-server-components?ck_subscriber_id=1010788714)
+
+### Does your web page bloated?
+
+While building applications and web pages can get bloat up because of all the content that it has. You need to think about all the aspects of you webpage: speed, search rank, user experience?
+
+[What is page bloat?](https://www.speedcurve.com/blog/page-bloat-web-performance/)
+
+### Expo SDK 49
+
+React-Native and Expo is a great combination for mobile development and it’s always great to see new versions of Expo itself so it can help developers much more.
+
+[Expo SDK 49](https://blog.expo.dev/expo-sdk-49-c6d398cdf740)
+
+---
+
+## <a href="#read--watch">Read & Watch</a>
+
+[Good code is like a love letter to the next developer who will maintain it. 📰](https://addyosmani.com/blog/good-code/)
+
+[10 Postgres tips for beginners 📰](https://postgres.ai/blog/20230722-10-postgres-tips-for-beginners)
+
+[Why engineers should focus on writing 📰](https://www.yieldcode.blog/post/why-engineers-should-write/)
+
+[Make the fetch api type safe with fets 📺](https://www.learnwithjason.dev/make-the-fetch-api-type-safe-with-fets/?ck_subscriber_id=1013093262)
+
+---
+
+## <a href='#challenge'>Challenge</a>
+
+JS Challenges all about solving problems that arises from it. So this time let’s try to make our own implementation of Array and we should be able to run this code block below:
+
+```js
+const office = array("Dwight Schrute", "Jim", "Kevin", "Angela", "Pam"):
+
+// Add to array (.push)
+office.hire("Michael", "Oscar", "Ryan", "Andy", "Toby");
+// Remove from array
+office.fire("Kevin");
+
+// Filter array (.filter from array)
+const meetingRoom = office.meeting((employee)=> {
+  return employee !== "Michael";
+});
+
+// meetingRoom =>  All the employees except Michael
+```
+
+1. `array(...args)` should create an array and return that array.
+
+2. `hire(...args)` function should push to array.
+
+3. `fire(arg)` function should remove a given element from the array
+
+   - Extra 1: If you pass exact object that is in the array it will remove that.
+
+   - Extra 2: It can take callback function to remove the element(s). Ex: `office.fire((employee)=> boolean))`
+
+4. `meeting(callback)` should filter the array.
+
+If you want to make it more challenging you can make every function is type-safe and typed correctly. Good luck and have fun 🥳
+
+</Tabs.Panel>
+<Tabs.Panel value="tr">
+
+Çeviri henüz hazırlanmadı, katkı sağlamak isterseniz (GitHub)[https://github.com/Ketcap/Ketcap-Dev/issues/6]
+
+</Tabs.Panel>
+</Tabs>
