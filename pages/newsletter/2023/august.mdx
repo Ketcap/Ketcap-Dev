@@ -1,0 +1,101 @@
+---
+type: post
+title: August 2023 Newsletter
+date: 2023-09-01
+---
+
+import { Tabs } from "@mantine/core";
+import Image from "next/image";
+
+<Tabs defaultValue="en">
+<Tabs.List>
+  <Tabs.Tab value="en">English</Tabs.Tab>
+  <Tabs.Tab value="tr">Türkçe</Tabs.Tab>
+</Tabs.List>
+<Tabs.Panel value="en">
+
+# July 2023 📅
+
+## Contents 📋
+
+1. [News & Explore](#news--explore)
+2. [Read & Watch](#read--watch)
+3. [Challenge](#challenge)
+
+---
+
+Summer is ending slowly, hope you all had a great rest in the summer let’s dive in to last newsletter from summer.
+
+<Image src="/memes/august-2023.png" alt="" width={500} height={500} />
+
+## <a href='#news--explore'>News & Explore</a>
+
+### Typescript 5.2
+
+TypeScript is growing every day and new version is out already. "using" declarations coming up and making sure sources are managed correctly. And more is on the line...
+
+[Typescript 5.2 Beta](https://devblogs.microsoft.com/typescript/announcing-typescript-5-2-beta/)
+
+### Caching in Next.js (App Router)
+
+With the App Router landing on Next.js and React Server Components, developers were confused how the caching and App Router works with it. So Tim Neutkens (Mainteiner of Next.js) has wrote down explanation about it.
+
+[Discussion on Vercel](https://github.com/vercel/next.js/discussions/54075)
+
+[Docs on Next.js 13](https://nextjs.org/docs/app/building-your-application/caching)
+
+### JS is weird
+
+How much do you trust your JavaScript skills? Take the test below and be surprised how weird JavaScript is. As a bonus we have a video about that.
+
+[JS is weird](https://jsisweird.com/)
+
+[WAT](https://www.destroyallsoftware.com/talks/wat)
+
+### Modernizing Packages to ESM
+
+ES Modules are getting more popularity, and the community with this popularity switching to ESM. One of the widely used packages in the ecosystem is Redux. Mark Erikson (maintainer of Redux, Redux-toolkit and more) has brought his opinions and experience while he was switching packages to ESM.
+
+[ESM Modernization](https://blog.isquaredsoftware.com/2023/08/esm-modernization-lessons)
+
+### Captcha vs ML Bots
+
+ML and AI space is growing everyday with unexpected rate. The study shows they are better and faster than humans on solving Captcha. So what's next for making sure visitors of the websites are not robots.
+
+[Arxiv Docs](https://arxiv.org/abs/2307.12108)
+
+---
+
+## <a href="#read--watch">Read & Watch</a>
+
+[Why web components are not used? 📰](https://daverupert.com/2023/07/why-not-webcomponents/)
+
+[What makes a strategy great 📰](https://longform.asmartbear.com/great-strategy/)
+
+[Pagination in MySQL 📺](https://www.youtube.com/watch?v=zwDIN04lIpc)
+
+---
+
+## <a href='#challenge'>Challenge</a>
+
+This month's challenge is all about types. We want to implement a type called `Last<T>` which will give us the last value in the array as a type. Let's check the example:
+
+```js
+type arr1 = ["a", "b", "c"];
+type arr2 = [3, 2, 1];
+
+type tail1 = Last<arr1>; // expected to be 'c'
+type tail2 = Last<arr2>; // expected to be 1
+```
+
+This challenge is coming to you from my favourite places to test myself and solve some challenges.
+
+Kudos to https://github.com/type-challenges/type-challenges
+
+</Tabs.Panel>
+<Tabs.Panel value="tr">
+
+Çeviri henüz hazırlanmadı, katkı sağlamak isterseniz [GitHub](https://github.com/Ketcap/Ketcap-Dev/issues/7)
+
+</Tabs.Panel>
+</Tabs>
